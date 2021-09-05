@@ -1,15 +1,70 @@
 ---
 title: "FundRmentals"
 description: |
-  Welcome to the website. I hope you enjoy it!
-site: distill::distill_website
+  Welcome to FundRmentals @ Sussex!
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    theme: dans-theme.css
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+xaringanExtra::use_clipboard()
+```
 
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
+### Complete the tutorial for this week: 
+
+:::ojtask
+
+Work through [this tutorial](http://milton-the-cat.rocks/learnr/r/r_getting_started/) (excluding the 'Getting data into RStudio' & 'Tables in R Markdown' sections)
+
+:::
+
+<!-- 
+
+:::ojtask
+
+```{r, eval = F, echo = T}
+
+learnr::run_tutorial("discovr_01", package = "discovr")
 
 ```
+
+:::
+
+-->
+
+<br>
+
+### Share your thoughts! 
+
+
+
+::: {.padlet-embed style="border: dashed 2px orange; rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:white"}
+<p style="padding:0;margin:0">
+
+<iframe src="https://uofsussex.padlet.org/embed/6r6dvmf0zogksalf" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:500px;display:block;padding:0;margin:0">
+
+</iframe>
+
+</p>
+
+::: {style="padding:8px;text-align:right;margin:0;"}
+<a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://padlet.net/embeds/made_with_padlet.png" alt="Made with Padlet" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none"/></a>
+:::
+:::
+
+
+
+
+
+<br>
+
+
+
+
+
+
 

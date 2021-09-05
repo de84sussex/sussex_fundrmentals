@@ -1,12 +1,47 @@
-name: "sussex_fundrmentals"
+theme: dans-theme.css
+name: "fundRmentals"
 title: "FundRmentals"
-description: |
-  FundRmentals
+favicon: img/Lightbulb.png
 output_dir: "_site"
 navbar:
+  logo:
+    image: img/logo.png
+    href: index.html
   right:
-    - text: "Home"
-      href: index.html
-    - text: "About"
-      href: about.html
+    - text: "Sessions"
+      menu:
+      - text: "Week 01"
+        href: ./week_01.html
+      - text: "Week 02"
+        href: ./week_02.html
+      - text: "Week 03"
+        href: ./week_03.html
+      - text: "Week 04"
+        href: ./week_04.html
+      - text: "Week 05"
+        href: ./week_05.html
+      - text: "Week 06"
+        href: ./week_06.html
+      - text: "Week 07"
+        href: ./week_07.html
+      - text: "Week 08"
+        href: ./week_08.html
+      - text: "Week 09"
+        href: ./week_09.html
+      - text: "Week 10"
+        href: ./week_10.html
+      - text: "Week 11"
+        href: ./week_11.html
+    - text: "ExtRas" 
+      menu:
+      - text: "R Resources"
+        href: ./resouRces.html
+#      - text: "Error Search"
+#        href: ./erroRs.html
+      - text: "R Help Desk"
+        href: ./HD.html
+      - text: "Writing Rticles"
+        href: ./rmd_tutorial.html
+        
+  search: false
 output: distill::distill_article
