@@ -1,0 +1,215 @@
+---
+title: "R Resources"
+description: |
+  This page contains links to R resources & tutorials for each core topic covered in PAAS, AnD, DS & QQM
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    theme: dans-theme.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(xaringanExtra)
+xaringanExtra::use_clipboard()
+```
+
+### Accessing Tutorials
+
+Much of the R content is delivered through interactive tutorials. These tutorials need to be installed & run within RStudio. To install the packages required to run them ("learnr", "remotes", "paas", & "discovr"), type each of the commands in the code block below into the RStudio console one at a time and press Enter to run them.
+
+Following installation, tutorials can be accessed through the "Tutorial" tab in RStudio, or by running the relevant code in the console.
+
+```{r, eval = F, echo = T}
+
+install.packages("learnr")
+install.packages("remotes")
+remotes::install_github("SussexPsychMethods/PAAS", build = FALSE, upgrade = "never")
+remotes::install_github("profandyfield/discovr")
+
+```
+
+Most R skills are covered in several modules & in several tutorials/practicals. Where this repetition occurs, there are multiple resources to refer to for help!
+
+<br>
+
+### R, RStudio & General Computing
+
+-   Installation of R & RStudio: [PAAS 00](https://canvas.sussex.ac.uk/courses/12684/pages/r-resources)
+
+-   Tours of RStudio: [PAAS 01](https://paas.netlify.app/tut01_alternative/)
+
+-   File paths:
+
+```{r, eval = F, echo = T}
+learnr::run_tutorial(name = "02_files_paths_projects", package = "paas")
+```
+
+-   R Projects: [PAAS 03](https://paas.netlify.app/practicals/02_project_files/slides/#1), [PAAS 08](https://paas.netlify.app/practicals/07_organizing_data/slides/#1)
+
+-   R objects, functions & packages: [PAAS 05](https://paas.netlify.app/practicals/04_writing_code/worksheets/), [PAAS 06](https://paas.netlify.app/practicals/05_data_structures/slides/#1), [PAAS 07](https://paas.netlify.app/practicals/06_packages_functions/slides/#1), [PAAS 07](https://paas.netlify.app/practicals/06_packages_functions/worksheets/?type=tutor)
+
+```{r, eval = F, echo = T}
+learnr::run_tutorial(name = "04_basic_r", package = "paas")
+```
+
+```{r, eval = F, echo = T}
+learnr::run_tutorial(name = "05_objects_functions_data", package = "paas")
+```
+
+```{r, eval = F, echo = T}
+learnr::run_tutorial(name = "06_functions_packages", package = "paas")
+```
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_01", package = "discovr")
+```
+
+<br>
+
+### R Markdown
+
+-   Basic R Markdown: [PAAS 04](https://paas.netlify.app/practicals/03_r_markdown/slides/#1)
+
+```{r, eval = F, echo = T}
+learnr::run_tutorial(name = "03_r_markdown", package = "paas")
+```
+
+-   Advanced R Markdown: [AnD 01](https://and.netlify.app/tutorials/01/)
+
+<br>
+
+### Importing & Organising Data
+
+-   Import tidy data:
+
+```{r, eval = F, echo = T}
+learnr::run_tutorial(name = "07_organizing_data", package = "paas")
+```
+
+<br>
+
+### Inspecting, Cleaning & Wrangling Data
+
+-   Inspecting data: [AnD 03](https://and.netlify.app/practicals/03/worksheet/?sol=true#inspecting-data)
+
+-   Wrangling data: [PAAS 09](https://paas.netlify.app/practicals/08_data_wrangling/slides/#1)
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "08_wrangling_data", package = "paas")
+```
+
+-   The pipe %\>% [PAAS 10](https://paas.netlify.app/practicals/09_grouping_summarising/slides/#1), [AnD 02](https://and.netlify.app/tutorials/02/)
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "09_summaries_and_pipes", package = "paas")
+```
+
+-   Data cleaning: [AnD 03](https://and.netlify.app/practicals/03/worksheet/?sol=true#cleaning), [AnD 04](https://and.netlify.app/practicals/04/worksheet/?sol=true#part-1-data-cleaning)
+
+-   Creating composites: [AnD 07](https://and.netlify.app/tutorials/07/)
+
+-   Checking dodgy data:
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_06", package = "discovr")
+```
+
+-   Centring variables:
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_10", package = "discovr")
+```
+
+<br>
+
+### Summarising Data
+
+-   Basic summary tables: [PAAS 10](https://paas.netlify.app/practicals/09_grouping_summarising/slides/#1), [AnD 03](https://and.netlify.app/practicals/03/worksheet/?sol=true#descriptives)
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "09_summaries_and_pipes", package = "paas")
+```
+
+-   Pretty tables: [PAAS 11](https://paas.netlify.app/practicals/10_tables_and_plots/slides/#1)
+
+-   Plots: [PAAS 11](https://paas.netlify.app/practicals/10_tables_and_plots/slides/#1), [AnD](https://and.netlify.app/practicals/02/worksheet/?sol=true#part-2-tables-and-visualisations)
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_05", package = "discovr")
+```
+
+-   Summary stats & CIs:
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_02", package = "discovr")
+```
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_03", package = "discovr")
+```
+
+<br>
+
+### Statistical Analyses
+
+-   Correlation: [AnD 05](https://and.netlify.app/tutorials/05/)
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_07", package = "discovr")
+```
+
+-   Chi-Square: [AnD 06](https://and.netlify.app/tutorials/06/)
+
+-   t-test: [AnD 07](https://and.netlify.app/tutorials/07/)
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_09", package = "discovr")
+```
+
+-   Linear model: [AnD 08](https://and.netlify.app/tutorials/08/), [AnD 09](https://and.netlify.app/tutorials/09/), [AnD 10](https://and.netlify.app/tutorials/10/), [AnD 11](https://and.netlify.app/tutorials/11/)
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_08", package = "discovr")
+```
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_11", package = "discovr")
+```
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_12", package = "discovr")
+```
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_13", package = "discovr")
+```
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_14", package = "discovr")
+```
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_15", package = "discovr")
+```
+
+-   Moderation & mediation:
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_10", package = "discovr")
+```
+
+-   Exploratory factor analysis:
+
+```{r, eval = FALSE, echo = T}
+learnr::run_tutorial(name = "discovr_18", package = "discovr")
+```
+
+<br>
+
+### Reporting Results
+
+-   Inline code: [AnD 05](https://and.netlify.app/tutorials/05/#optional-inline-coding)
+
+<br>

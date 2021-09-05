@@ -1,0 +1,32 @@
+---
+title: "R Help Desk"
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    theme: dans-theme.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### Book a slot for the R Help Desk below!
+
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/danielle_evans/r_hd?primary_color=ffa500" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+
+<br>
+
+<a href="mailto:danielle.evans@sussex.ac.uk"> Please email me</a> if you would like to meet at a time not specified above or if you would like to meet in person. 
+
+
+<br>
+
+
+
+
+
+
