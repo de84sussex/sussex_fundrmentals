@@ -1,0 +1,24 @@
+---
+title: "Writing Articles in RMarkdown"
+description: |
+  Coming soon! 
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    theme: dans-theme.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, eval = FALSE)
+library(emo)
+```
+
+
+### Method 1: `papaja`
+
+Coming soon!
+
+### Method 2: `rticles`
+
+Coming soon!

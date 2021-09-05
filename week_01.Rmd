@@ -1,0 +1,52 @@
+---
+title: "Week 01"
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    theme: dans-theme.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### HappyHouR 
+
+*Click on the slides below & press the left/right arrows on your keyboard to change slides or [open in a new tab](./fundRmentals_intro/index.html){target="_blank"}*
+
+
+<iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    height="360"
+    src="./fundRmentals_intro/index.html">
+</iframe>
+
+
+### Complete the tutorial for next week: 
+
+:::ojtask
+
+Work through [this tutorial](http://milton-the-cat.rocks/learnr/r/r_getting_started/) (excluding the 'Getting data into RStudio' & 'Tables in R Markdown' sections)
+
+:::
+
+<br>
+
+
+### Downloading R & RStudio
+
+When downloading the software, check that it is going into a sensible location on your pc - avoid downloading them to OneDrive
+
+#### Step 1: Download R
+
+Download the [MacOS version](https://cloud.r-project.org/bin/macosx/R-4.0.2.pkg) or the [Windows version](https://cloud.r-project.org/bin/windows/base/R-4.0.2-win.exe).
+
+
+
+#### Step 2: Download RStudio
+
+Download the [MacOS version](https://download1.rstudio.org/desktop/macos/RStudio-1.3.1093.dmg) or the [Windows version](https://download1.rstudio.org/desktop/windows/RStudio-1.3.1093.exe).
+
+
+
