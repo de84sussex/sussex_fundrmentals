@@ -318,6 +318,19 @@ Use the table below & hover over the modules to find out what resources cover ea
 </table>
 
 
+### Useful Resources
+
+- Brush up on your stats knowledge with [Prof Andy Field's Lectures](https://www.youtube.com/user/ProfAndyField/videos)
+
+- Work through additional [`discovr`](https://www.discovr.rocks/discovr/) and [`adventr`](http://milton-the-cat.rocks/home/adventr.html) tutorials
+
+- Check out the [R for Data Science book](https://r4ds.had.co.nz/index.html)
+
+- Build your R Markdown knowledge with [this definitive guide](https://bookdown.org/yihui/rmarkdown/)
+
+- Take a look at the [R Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)
+
+
 
 <br>
 

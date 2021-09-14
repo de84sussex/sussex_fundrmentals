@@ -9,6 +9,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+xaringanExtra::use_clipboard()
 ```
 
 
@@ -25,9 +26,28 @@ Slides [(*open in a new tab*)](){target="_blank"}
 
 ### Complete the tutorial for next week: 
 
+You need to install the `discovr` package to complete this week's tutorial.
+
+If you didn't install it in the HappyHouR last week, open RStudio, paste each line of code below into the **Console**, & press **Enter** to run them one by one. 
+
+```{r, eval = F, echo = T}
+
+install.packages("learnr")
+install.packages("remotes")
+remotes::install_github("profandyfield/discovr")
+
+```
+
+
 :::ojtask
 
-Work through [this tutorial]() 
+Work through the discovr_01 tutorial by pasting the below code into the **Console** in RStudio & pressing **Enter**.
+
+```{r, eval = F, echo = T}
+
+learnr::run_tutorial("discovr_01", package = "discovr")
+
+```
 
 :::
 

@@ -18,7 +18,9 @@ xaringanExtra::use_clipboard()
 
 :::ojtask
 
-Work through [this tutorial](http://milton-the-cat.rocks/learnr/r/r_getting_started/) (excluding the 'Getting data into RStudio' & 'Tables in R Markdown' sections)
+No tutorial for this week! `r emo::ji("grin")`
+
+<!--Work through [this tutorial](http://milton-the-cat.rocks/learnr/r/r_getting_started/)-->
 
 :::
 

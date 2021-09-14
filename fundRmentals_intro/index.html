@@ -31,30 +31,66 @@ class: center, middle, inverse, title-slide
 
 #### Part 1: Course Overview
 
-- Introduction to fundRmentals
+- What even is R &amp; why are you making me learn it?
 
-
-#### Part 2: Showcase
+- Introduction to the fundRmentals course
 
 - The R-cult: why R is ⭐*magical*⭐ 
 
 
-#### Part 3: Getting StaRted
+#### Part 2: Getting StaRted
 
 - Next steps 
 
 - Tips for success
 
+- Installing R &amp; RStudio
+
+
 
 ---
 
 
-class: inverse, middle, center
+class: middle, center
 
 # Part 1: Course Overview
 
 
 ---
+
+# What even is R anyway? 🤔
+
+.pull-left[
+
+- R is a programming language where we can talk to our computer &amp; tell it what to do...
+
+
+```r
+print("Hi LearneRs!")
+```
+
+```
+## [1] "Hi LearneRs!"
+```
+
+
+]
+
+.pull-right[
+
+- RStudio is a more user-friendly interface where we can use R
+
+
+&lt;img src="../img/rstudio.png" width="2560" /&gt;
+
+
+
+]
+
+
+
+---
+
 
 
 # Introduction to fundRmentals
@@ -71,11 +107,11 @@ class: inverse, middle, center
 
 #### Course Aims 
 
-- Gain solid understanding of the 'fund**R**mentals' 
+- Gain solid understanding of the 'fundRmentals' 
 
   + Feel confident supervising project students using R 
 
-  + Feel inspiRed to use R/RStudio for your own projects  
+  + Feel inspired to use R/RStudio for your own projects  
 
 ]
 
@@ -95,12 +131,6 @@ class: inverse, middle, center
 
 
 
----
-
-
-class: inverse, middle, center
-
-# Part 2: Showcase
 
 ---
 
@@ -155,6 +185,36 @@ lm(outcome ~ predictor_1 + predictor_2 + predictor_3 + predictor_4 + predictor_5
      predictor_7 + predictor_8 + predictor_9 + predictor_10, data = data)
 ```
 
+
+
+
+---
+
+# A *very* simple regression
+
+- 1 line of code, much quicker than clicking in SPSS:
+
+
+```r
+lm(outcome ~ predictor, data = data)
+```
+
+&lt;br&gt;
+
+### *"But Dan, what if I want to do a t-test?"*
+
+
+```r
+t.test(outcome ~ grouping_variable, data = data)
+```
+
+### *"Or a correlation?"*
+
+
+```r
+cor.test(~ variable_1 + variable_2, data = data)
+```
+
 ---
 
 
@@ -181,6 +241,7 @@ lm(outcome ~ predictor_1*predictor_2, data = data)
 
 
 
+
 ---
 
 
@@ -196,6 +257,7 @@ lm(outcome ~ predictor, data = data)
 &lt;br&gt;
 
 ### *"But Dan, what if I have a stupidly complex model?"*
+
 
 
 ---
@@ -252,108 +314,82 @@ growth(model, data = data, estimator = "MLR")
 
 
 
-
 ---
+# Data Viz: A Pretty, Plain, APA Scatterplot
 
 
-# Data Viz: A Pretty Plain Scatterplot
-
-.center[
-.middle[
-
-![](index_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
+.pull-left[
+.tiny[
 
 
-]]
+```r
+ggplot(data, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point() + 
+    labs(x = "Flipper Length (mm)", y = "Body Mass (g)") + 
+      theme_apa() 
+```
+]
+]
+
+.pull-right[
+
+&lt;img src="index_files/figure-html/unnamed-chunk-15-1.png" width="85%" /&gt;
 
 
-
----
-
-# Data Viz: Rainbow Box Plot
-
-.center[
-.middle[
+]
 
 
-![](index_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
-
-
-
-]]
 
 
 
 ---
-
-# Data Viz: Rainbow Jitter Plot
-
-.center[
-.middle[
-
-![](index_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
-
-]]
+# Data Viz: Grouped Scatterplot
 
 
-
-&lt;!--
-
-# Data Viz: Rainbow Circular Barchart
-
-.center[
-.middle[
-
-![](index_files/figure-html/unnamed-chunk-12-1.png)&lt;!-- --&gt;
-]]
-
---&gt;
-
----
+.pull-left[
+.teeny[
 
 
+```r
+ggplot(data, aes(x = flipper_length_mm, y = body_mass_g, colour = island)) +
+  geom_point() + 
+    labs(x = "Flipper Length (mm)", y = "Body Mass (g)", colour = "Island") + 
+      theme_apa() 
+```
+]
+]
 
+.pull-right[
 
-# Data Viz: Mario Kart Rainbow Road 
+&lt;img src="index_files/figure-html/unnamed-chunk-17-1.png" width="85%" /&gt;
 
-.center[
-.middle[
-
-![](index_files/figure-html/unnamed-chunk-13-1.png)&lt;!-- --&gt;
-
-
-]]
-
-
+]
 
 ---
 
 
 # Data Viz: sCATterplot
 
-.center[
-.middle[
-
-![](index_files/figure-html/unnamed-chunk-14-1.png)&lt;!-- --&gt;
+.pull-left[
+.tiny[
 
 
-]]
-
-
----
-
-
-# Data Viz: Dan&lt;sup&gt;2&lt;/sup&gt;
-
-
-
-.center[
-.middle[
-
-
-![](index_files/figure-html/unnamed-chunk-15-1.png)&lt;!-- --&gt;
+```r
+ggplot(data, aes(x = flipper_length_mm, y = body_mass_g)) +
+ geom_cat(cat = "lil_bub", size = 2) + 
+  labs(x = "Catnip Consumed", y = "Happiness") + 
+    theme_apa()
+```
 
 ]]
+
+.pull-right[
+
+&lt;img src="index_files/figure-html/unnamed-chunk-19-1.png" width="85%" /&gt;
+
+
+]
+
 
 
 ---
@@ -363,14 +399,15 @@ growth(model, data = data, estimator = "MLR")
 
 .pull-left[
 
-- Combine code (analyses, plots etc.) &amp; write-up in one document 
+- Combine code (analyses, plots etc.) &amp; text in one document 
 
-- Create a nicely formatted word doc/html/pdf &amp; more
+- Great for writing notes about your analyses or for creating nicely formatted word docs/htmls/pdfs etc.
 
-- Super useful for writing papers, dissertations &amp; theses
+- Super useful for writing journal articles, dissertations &amp; theses
 
 - Additional packages (`papaja` &amp; `rticles`) for apa style/journal formatting
 
+- **Most (if not _all_) students will use RMarkdown for their analyses**
 
 
 ]
@@ -414,34 +451,6 @@ growth(model, data = data, estimator = "MLR")
 
 
 
-
-
-&lt;!--
-
-# SisteRs are doin' it for themselves (*&amp; others*)
-
-.pull-left[
-
-- Widening gender gap in coding skills ([npr, 2014](https://www.npr.org/sections/money/2014/10/21/357629765/when-women-stopped-coding); [OECD, 2015](https://www.oecd-ilibrary.org/education/the-abc-of-gender-equality-in-education_9789264229945-en))
-
-- Psychology @ Sussex is predominantly made up of female students &amp; is an entry into STEM fields where girls are underrepresented 
-
-- By learning how to code ourselves, we can help reduce the skills gender gap by being role models/supporting students' learning 
-]
-
-
-.pull-right[
-
-&lt;a href="https://www.npr.org/sections/money/2014/10/21/357629765/when-women-stopped-coding"&gt;
-
-&lt;img src="../img/cs.png" width="1061" /&gt;
-
-&lt;/a&gt;
-
-]
-
---&gt;
-
 ---
 
 
@@ -453,6 +462,7 @@ class: center, middle
 
 
 ![](../img/office.gif)&lt;!-- --&gt;
+
 
 
 ---
@@ -471,11 +481,14 @@ class: center, middle
 &lt;/iframe&gt;
 
 
+
 ---
 
-class: inverse, middle, center
+class: middle, center
 
-# Part 3: Getting StaRted
+# Part 2: Getting StaRted
+
+
 
 
 ---
@@ -484,24 +497,30 @@ class: inverse, middle, center
 
 #### Complete the [tutorial](http://milton-the-cat.rocks/learnr/r/r_getting_started/) before our first HappyHouR next week, which covers: 
 
-  + How to install R &amp; RStudio (see the [Week 01 webpage](https://fundrmentals.netlify.app/week_01.html) for download links to the software)
-  + A tour of RStudio
+  + Installation &amp; tour of RStudio
   + Working in RStudio
   + Installing &amp; loading packages
   + RMarkdown
+  + Getting data into RStudio
+  + Tables in RMarkdown
 
 
 #### Tips for Success
 
   + Practice as often as you can
   + Be kind to yourself - it feels really slow &amp; confusing when you first start
-  + Celebrate the little wins
-  + Ask lots of questions, often someone else explaining it slightly different makes everything click
+  + Ask questions, often someone else explaining it slightly differently makes everything click
   + There's a huge online community of R users, for any problems/errors you're having the solution can usually be found quite easily by searching
   + Google is your best friend 
 
 
 
+
+---
+
+class: center, middle
+
+# Installing R &amp; RStudio Walkthrough
 
 
 
