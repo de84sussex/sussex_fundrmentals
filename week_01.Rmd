@@ -13,21 +13,24 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### HappyHouR 
 
-*Click on the slides below & press the left/right arrows on your keyboard to change slides or [open in a new tab](./fundRmentals_intro/index.html){target="_blank"}*
-
+Slides [(*open in a new tab*)](){target="_blank"}
 
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
     height="360"
-    src="./fundRmentals_intro/index.html">
+    src="">
 </iframe>
 
+<!--    
 
+*Click on the slides below & press the left/right arrows on your keyboard to change slides or [open in a new tab](./fundRmentals_intro/index.html){target="_blank"}*
 
+    src="./fundRmentals_intro/index.html">
+-->
 
 ### Downloading R & RStudio
 
-When downloading the software, check that it is going into a sensible location on your pc - avoid downloading them to OneDrive
+When downloading software, check that it is going into a sensible location on your pc - avoid downloading them to OneDrive!
 
 #### Step 1: Download R
 
