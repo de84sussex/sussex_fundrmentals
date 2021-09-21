@@ -34,7 +34,7 @@ When downloading software, check that it is going into a sensible location on yo
 
 #### Step 1: Download R
 
-Download the [MacOS version](https://cloud.r-project.org/bin/macosx/R-4.0.2.pkg) or the [Windows version](https://cloud.r-project.org/bin/windows/base/R-4.0.2-win.exe).
+Download the [MacOS version](https://cloud.r-project.org/bin/macosx/R-4.0.2.pkg) or the [Windows version](https://cran.r-project.org/bin/windows/base/old/4.0.5/R-4.0.5-win.exe).
 
 
 #### Step 2: Download RStudio

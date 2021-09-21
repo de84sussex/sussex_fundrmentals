@@ -1,0 +1,38 @@
+---
+title: "Using Inline Code"
+description: |
+  Learn how to use inline code with this tutorial! 
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    theme: dans-theme.css
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(xaringanExtra)
+xaringanExtra::use_clipboard()
+```
+
+
+
+### Inline Code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
