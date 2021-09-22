@@ -57,9 +57,9 @@ style_mono_light(
 
 #### Part 2: Getting StaRted
 
-- Next steps 
-
 - Tips for success
+
+- Next steps 
 
 - Installing R & RStudio
 
@@ -741,38 +741,43 @@ i promise once you get past that initial fear, and unfamiliarity, it becomes muc
 
 ---
 
-# Next Steps
+# Tips for Success
 
-#### Complete the [tutorial](http://milton-the-cat.rocks/learnr/r/r_getting_started/) before our first HappyHouR next week, which covers: 
+#### For Supervision...
 
-  + Installation & tour of RStudio
-  + Working in RStudio
-  + Installing & loading packages
-  + RMarkdown
-  + Getting data into RStudio
-  + Tables in RMarkdown
+Number 1 rule: don't panic! We've all got this!!
+
+- Students have access to everything we've covered thus far on Canvas 
+- They are equipped to be able to do their analyses - they just don't know it 
+- They'll also have access to an R helpdesk next semester & two analyses workshops 
 
 
-#### Tips for Success
+#### For Yourself...
 
-  + Practice as often as you can
-  + Be kind to yourself - it feels really slow & confusing when you first start
-  + Ask questions, often someone else explaining it slightly differently makes everything click
-  + There's a huge online community of R users, for any problems/errors you're having the solution can usually be found quite easily by searching
-  + Google is your best friend 
+- Practice as often as you can
+- Be kind to yourself - it feels really slow & confusing when you first start
+- Ask questions, often someone else explaining it slightly differently makes everything click
+- There's a huge online community of R users, for any problems/errors you're having the solution can usually be found quite easily by searching
+- Google is your best friend 
 
 
 
 
 ???
 
-ok so before our first happy hour next week, you need to download r and rstudio if u havent already, im gona help u thru that procss in a second for those of you that might be a little unsure, in the tutorial for next week andy goes through what they actually are, there's a tour of rstudio, & how to install & load packages, and some info about rmarkdown
+before i conclude for today i also just want to finish with some advice & tips
 
-so you should aim to complete the tutorial before we meet next week, if u have any problems just let me know, u can email me or post on the padlet with anything that comes up or any questions u want me to answer next week
+in terms of supervision, dont panic, its gonna be ok, you'll be ok, we'll all be ok, we'll get through it, and it'll be good
 
-before i conclude for today i also just want to finish with some of my own tips 
+students know what theyre doing, they just dont know that, they won't tell u this, and they dont feel like this, but we've really held their hand throughout their stats learning, which in one sense hasnt been the most helpful in terms of their own independence, but in their last stats module we stopped that, we left a lot of it up to them, we forced them to make their own analytical decisions with their lab report and they had to get involved and actually think about what they needed to do rather than being told, and it really surprised me how well they did and how positively they ended up feeling about it, they didnt like it originally, but so many ive spoken to since have told me they really liked that assignment and felt like they learnt the most & it was a really quite complex analysis & the code involved was a lot
 
-r can be tricky, it can feel very weird to begin with, everything seems really unfamiliar so thats why you should try to use it as often as you can, even if its just for a few minutes, it is a language after all, and its easy to forget stuff if you leave it a while
+they'll most likely tell u theyre really anxious about their dissertation around using R and their analyses, but it isnt as specific to R as they think it is & how it might sound to you, a large part of it will just be because dissertations feel scary no one feels like they know what theyre doing for the most part, as im sure u all know, a lil reassurance goes a long way
+
+they have access to everything that they need on canvas, its just a case of them actually going to find it and revising it briefly to know how to apply it to their own data, as part of the research disseration module they'll also have access to an R Helpdesk, and two analyses workshops ao its all gonna be fine
+
+
+
+in terms of your own learning, r can be tricky, it can feel very weird to begin with, everything seems really unfamiliar so thats why you should try to use it as often as you can, even if its just for a few minutes, it is a language after all, and its easy to forget stuff if you leave it a while
 
 be kind to urself, u might not get something right away and thats ok, it can feel like everything is confusing and like ur not progressing very quickly, but everyone has this point where stuff suddenly just makes sense and theres this steep updward curve in your knowledge n skills
 
@@ -782,9 +787,40 @@ there is a huge huge community of r users online, so many resources, lots of for
 
 finally just stick with it, i never cud have imagined i wud be teaching R when i started learning it those few years ago, so if i can do it, u can do absolutely do it
 
-in a moment, for those of you that dont have r and rstudio installed yet, i'll show you where u can download them, but otherwise we are at the end of the session now, does anyone have any questions? if not ur free to leave and u can go start on the tutorial for this week
+---
+
+
+# Next Steps
+
+#### Complete the [tutorial](http://milton-the-cat.rocks/learnr/r/r_getting_started/) before our first .orange[HappyHouR] next week, which covers: 
+
+- Installation & tour of RStudio
+
+- Working in RStudio
+
+- Installing & loading packages
+
+- RMarkdown
+
+- Getting data into RStudio
+
+- Tables in RMarkdown
+
+
+???
+
+ok so before our first happy hour next week, you need to download r and rstudio if u havent already, im gona help u thru that procss in a second for those of you that might be a little unsure, in the tutorial for next week andy goes through what they actually are, there's a tour of rstudio, & how to install & load packages, and some info about rmarkdown
+
+so you should aim to complete the tutorial before we meet next week, if u have any problems just let me know, u can email me or post on the padlet with anything that comes up or any questions u want me to answer next week
+
+i'm not preparing anything too far in advance because i want to be responsive to any issues ur having, so do let me know if anything just doenst make sense
+
+that's all from me for today, thank u all for getting involved in the course, i hope that ul find it helpful, in a moment, for those of you that dont have r and rstudio installed yet, i'll show you where u can download them, but otherwise we are at the end of the session now, does anyone have any questions? if not ur free to leave and u can go start on the tutorial for this week
+
 
 ---
+
+
 
 class: center, middle
 

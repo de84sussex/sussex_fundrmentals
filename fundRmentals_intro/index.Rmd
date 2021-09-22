@@ -57,9 +57,9 @@ style_mono_light(
 
 #### Part 2: Getting StaRted
 
-- Next steps 
-
 - Tips for success
+
+- Next steps 
 
 - Installing R & RStudio
 
@@ -558,27 +558,44 @@ class: middle, center
 
 ---
 
+# Tips for Success
+
+#### For Supervision...
+
+Number 1 rule: don't panic! We've all got this!!
+
+- Students have access to everything we've covered thus far on Canvas 
+- They are equipped to be able to do their analyses - they just don't know it 
+- They'll also have access to an R helpdesk next semester & two analyses workshops 
+
+
+#### For Yourself...
+
+- Practice as often as you can
+- Be kind to yourself - it feels really slow & confusing when you first start
+- Ask questions, often someone else explaining it slightly differently makes everything click
+- There's a huge online community of R users, for any problems/errors you're having the solution can usually be found quite easily by searching
+- Google is your best friend 
+
+
+
+---
+
 # Next Steps
 
-#### Complete the [tutorial](http://milton-the-cat.rocks/learnr/r/r_getting_started/) before our first HappyHouR next week, which covers: 
+#### Complete the [tutorial](http://milton-the-cat.rocks/learnr/r/r_getting_started/) before our first .orange[HappyHouR] next week, which covers: 
 
-  + Installation & tour of RStudio
-  + Working in RStudio
-  + Installing & loading packages
-  + RMarkdown
-  + Getting data into RStudio
-  + Tables in RMarkdown
+- Installation & tour of RStudio
 
+- Working in RStudio
 
-#### Tips for Success
+- Installing & loading packages
 
-  + Practice as often as you can
-  + Be kind to yourself - it feels really slow & confusing when you first start
-  + Ask questions, often someone else explaining it slightly differently makes everything click
-  + There's a huge online community of R users, for any problems/errors you're having the solution can usually be found quite easily by searching
-  + Google is your best friend 
+- RMarkdown
 
+- Getting data into RStudio
 
+- Tables in RMarkdown
 
 
 ---
