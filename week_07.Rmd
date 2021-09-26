@@ -9,6 +9,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+xaringanExtra::use_clipboard()
 ```
 
 ### HappyHouR 
@@ -26,7 +27,19 @@ Slides [(*open in a new tab*)](){target="_blank"}
 
 :::ojtask
 
-Work through [this tutorial]() 
+Work through the discovr_11 & the discovr_12 tutorials by pasting the below code into the **Console** in RStudio & pressing **Enter**.
+
+```{r, eval = F, echo = T}
+
+learnr::run_tutorial("discovr_11", package = "discovr")
+
+```
+
+```{r, eval = F, echo = T}
+
+learnr::run_tutorial("discovr_12", package = "discovr")
+
+```
 
 :::
 

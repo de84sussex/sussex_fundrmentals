@@ -9,6 +9,8 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+xaringanExtra::use_clipboard()
+library(emo)
 ```
 
 ### HappyHouR 
@@ -26,7 +28,7 @@ Slides [(*open in a new tab*)](){target="_blank"}
 
 :::ojtask
 
-Work through [this tutorial]() 
+`r emo::ji("partying_face")` You made it!! There are no more tutorials to complete! But remember you can access all of them again to revise your skills & you can find more resources & tutorials [here...](https://fundrmentals.netlify.app/resources)
 
 :::
 

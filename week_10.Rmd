@@ -9,6 +9,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+xaringanExtra::use_clipboard()
 ```
 
 ### HappyHouR 
@@ -26,8 +27,24 @@ Slides [(*open in a new tab*)](){target="_blank"}
 
 :::ojtask
 
-Work through [this tutorial]() 
+Work through either the discovr_14 (repeated measures), discovr_15 (mixed designs), or discovr_20 (categorical outcomes/logistic regression) tutorial (or all 3...) by pasting the below code into the **Console** in RStudio & pressing **Enter**.
+
+```{r, eval = F, echo = T}
+
+learnr::run_tutorial("discovr_14", package = "discovr")
+
+```
+
+```{r, eval = F, echo = T}
+
+learnr::run_tutorial("discovr_15", package = "discovr")
+
+```
+
+```{r, eval = F, echo = T}
+
+learnr::run_tutorial("discovr_20", package = "discovr")
+
+```
 
 :::
-
-<br>
