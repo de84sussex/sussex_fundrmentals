@@ -34,9 +34,7 @@ xaringanExtra::use_clipboard()
 
 :::ojtask
 
-No tutorial for this week! `r emo::ji("grin")`
-
-<!--Work through [this tutorial](http://milton-the-cat.rocks/learnr/r/r_getting_started/)-->
+Work through [this tutorial](http://milton-the-cat.rocks/learnr/r/r_getting_started/) `r emo::ji("smile")`
 
 :::
 

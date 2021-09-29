@@ -18,15 +18,12 @@ Slides [(*open in a new tab*)](){target="_blank"}
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
     height="360"
-    src="">
+    src="./fundRmentals_intro/index.html">
 </iframe>
 
-<!--    
 
 *Click on the slides below & press the left/right arrows on your keyboard to change slides or [open in a new tab](./fundRmentals_intro/index.html){target="_blank"}*
 
-    src="./fundRmentals_intro/index.html">
--->
 
 ### Downloading R & RStudio
 
