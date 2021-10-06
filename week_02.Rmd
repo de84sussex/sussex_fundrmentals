@@ -15,12 +15,12 @@ xaringanExtra::use_clipboard()
 
 ### HappyHouR 
 
-Slides [(*open in a new tab*)](){target="_blank"}
+Slides [(*open in a new tab*)](https://fundrmentals.netlify.app/week_02/index.html){target="_blank"}
 
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
     height="360"
-    src="./week_02/index.html">
+    src="https://fundrmentals.netlify.app/week_02/index.html">
 </iframe>
 
 
