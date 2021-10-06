@@ -30,7 +30,7 @@ xaringanExtra::use_clipboard()
 
 <br>
 
-### Complete the tutorial for this week: 
+### Complete the week 2 tutorial: 
 
 :::ojtask
 
