@@ -13,24 +13,47 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(xaringanExtra)
-xaringanExtra::use_clipboard()
 ```
-
 
 
 ### Inline Code
 
+The output of code can be included within the body of an RMarkdown document (i.e., 'inline') to increase accuracy and efficiency when reporting values. Inline code is used by enclosing any objects or functions inside a set of back ticks like this:
+
+.center[
+
+`` `r knitr::inline_expr("function_goes_here()")` ``
+
+]
+
+By using inline code, we can avoid any typos when reporting results and it also means that if our data, statistical tests, or tables change in any way, the RMarkdown file will be updated with the new values automatically whenever you knit the document. The output of the inline code will be entirely indistinguishable from the surrounding text in the document, as though you had written it by hand yourself. 
+
+
+### How to use inline code
+
+We can use inline code to pull out information from a range of sources including  Sample size, tables, etc., test results, objects...
+
+how to use it with sample size, test results, tables
+
+`` `r knitr::inline_expr("nrow(data)")` ``
+
+You must include the `r` inside the back ticks for the code to be evaluated - this is something easily forgotten. 
+
+
+#### How to access objects, columns, cells, variables etc
+
+str & environment 
+
+
+#### How to check if it has worked
 
 
 
+#### Formatting tips
 
+p values
 
-
-
-
-
-
-
+decimals/digits 
 
 
 

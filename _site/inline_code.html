@@ -2441,10 +2441,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }</style>
   <!--/radix_placeholder_distill-->
   <script src="site_libs/header-attrs-2.9.4/header-attrs.js"></script>
-  <script src="site_libs/clipboard-2.0.6/clipboard.min.js"></script>
-  <link href="site_libs/xaringanExtra-clipboard-0.2.4/xaringanExtra-clipboard.css" rel="stylesheet" />
-  <script src="site_libs/xaringanExtra-clipboard-0.2.4/xaringanExtra-clipboard.js"></script>
-  <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2532,10 +2528,27 @@ ExtRas
 <h3>Contents</h3>
 <ul>
 <li><a href="#inline-code">Inline Code</a></li>
+<li><a href="#how-to-use-inline-code">How to use inline code</a></li>
 </ul>
 </nav>
 </div>
 <h3 id="inline-code">Inline Code</h3>
+<p>The output of code can be included within the body of an RMarkdown document (i.e., ‘inline’) to increase accuracy and efficiency when reporting values. Inline code is used by enclosing any objects or functions inside a set of back ticks like this:</p>
+<p>.center[</p>
+<p><code>`r function_goes_here()`</code></p>
+<p>]</p>
+<p>By using inline code, we can avoid any typos when reporting results and it also means that if our data, statistical tests, or tables change in any way, the RMarkdown file will be updated with the new values automatically whenever you knit the document. The output of the inline code will be entirely indistinguishable from the surrounding text in the document, as though you had written it by hand yourself.</p>
+<h3 id="how-to-use-inline-code">How to use inline code</h3>
+<p>We can use inline code to pull out information from a range of sources including Sample size, tables, etc., test results, objects…</p>
+<p>how to use it with sample size, test results, tables</p>
+<p><code>`r nrow(data)`</code></p>
+<p>You must include the <code>r</code> inside the back ticks for the code to be evaluated - this is something easily forgotten.</p>
+<h4 id="how-to-access-objects-columns-cells-variables-etc">How to access objects, columns, cells, variables etc</h4>
+<p>str &amp; environment</p>
+<h4 id="how-to-check-if-it-has-worked">How to check if it has worked</h4>
+<h4 id="formatting-tips">Formatting tips</h4>
+<p>p values</p>
+<p>decimals/digits</p>
 <p><br></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

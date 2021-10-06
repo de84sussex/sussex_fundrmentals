@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>FundRmentals 02</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Dr Danielle Evans | University of Sussex" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="ppt_style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# FundRmentals 02
+### Dr Danielle Evans | University of Sussex
+
+---
+
+
+
+
+
+
+
+
+# Overview
+
+- Q&amp;A
+
+- Tutorial Recap
+
+  + RStudio
+  
+  + R Projects
+  
+  + RMarkdown
+  
+  + Reading in data
+
+- Installing `discovr`
+
+
+---
+
+class: middle, center
+
+# Any questions from the last tutorial?
+
+---
+
+# RStudio Panes
+
+- 4 panes: source, console, environment etc. &amp; files etc.
+
+- The **Source** pane is for viewing, editing &amp; running code in RMarkdown/R Scripts
+
+- The **Console** is for running code that we don't need in the future
+
+- The **Environment** pane is for viewing any objects we've created in R
+
+- The **Files** pane is for navigating to files/folders, viewing plots &amp; getting help
+
+- We will mostly work in the **Source** pane, but we'll also use the **Files** pane to navigate to files &amp; the **Console** for running anything we don't want to keep
+
+
+### Task
+
+1. Open up RStudio
+
+
+???
+
+R is software that we can use to perform statistical analyses
+
+But to make our lives easier, we install RStudio too, which interfaces R, &amp; then we forget that R exists
+
+So once we have those both installed, we only ever need to open up RStudio
+
+Within RStudio we have 4 panes, when you open it up for the first time, you'll see 3, and then when you start working on a document, another pane will appear, you can edit where you want the panes to be, what theme you want to use, text etc
+
+To start with, we have the source pane, which is where our main documents will appear, really where we will work the most, and we use it to view, edit and run any code within an RMarkdown document or an R script
+
+Then we have the console, which is for running any code that we dont want to keep, nothing we do there is saved, so generally it's good to use whenever you want to quickly check something, you wouldnt want to do your entire analysis in the console, but you might use it to quickly see the sample size, or to view some data or a table, or to install packages (we'll talk more about packages next week)
+
+We have the environment pane, which we won't really use that much, but it contains a list of any of the objects we create within RStudio, which could be a dataset, or a plot, or a table etc.,
+
+Then we have the files pane, we'll use this for navigating to different files &amp; folders &amp; looking at the help documentation
+
+**demo RStudio**
+
+---
+
+# R Projects (.Rproj)
+
+- Navigating to different folders/directories across different devices can be a bit of a pain
+  + UG students also *really* struggle with file paths 😢
+- So we can use R Projects (.Rproj) to make our lives easier
+  + R Projects save information about the folder/files
+  + Saves the previous state of the project so will open up the files you were working on previously
+- Within R Projects we can use **relative file paths** which means that your project will work across devices &amp; people
+- We've taught students how to use R Projects, &amp; you should encourage them to create one for their dissertation
+
+
+### Tasks
+
+1. Create an **R Project** for the fundRmentals course
+2. Create **data** &amp; **r_docs** folders within that project (you can do this through the **Files** pane)
+
+
+
+???
+
+typically when we're working with rstudio, we'll be working with data files created &amp; saved elsewhere, and we'll have to use file paths to get to those objects
+
+Navigating to different folders/directories across different devices can be a bit of a pain
+  
+UG students also *really* struggle with file paths 😢
+
+So we can use R Projects (.Rproj) to make our lives easier
+
+R projects are like folders that we can create in RStudio, and they save information about that folder &amp; the files in it
+  
+Saves the previous state of the project so will open up the files you were working on previously
+
+the r project will become your 'working directory', whenever we talk about directories, we really just mean folders, so wherever the R PRoj is located, this becomes the folder you're working in, and so it becomes the the default location where R will look for or save any files
+
+the good thing about R projects is that we can use **relative file paths** which means that your project will work across devices &amp; people if you share it with others, but i'll explain file paths later on when we have a go at reading in some data
+
+We've taught students how to use R Projects, they've created them almost weekly for the past two years so they should be relatively well rehearsed with doing this, &amp; you should get them to set one up for their dissertation to save their data into, and any analyses, or documents
+
+generally, i would suggest creating an r project for any research project you're working on, and then you can keep anything related to that project in that one area
+
+**demo creating an R project, and opening r_docs &amp; data**
+
+We can see what project we're in by looking at the top right corner 
+
+so now try this out yourselves, by creating an R project &amp; creating r_docs &amp; data folders, which you can do in the files pane
+
+---
+
+# RMarkdown (.Rmd)
+
+Made up of 3 components:
+
+- YAML
+  + Sets options for the document, i.e., author, title, output type
+  + Students sometimes delete this part accidentally, the solution is just to open a new RMarkdown file, and copy the missing yaml across to the original file
+- Body text
+  + Need to use markdown to apply formatting to text - see [this guide](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown.pdf)
+- Code chunks
+  + This is where we write any code for analyses, tables, plots etc.
+  + Code chunks are easy to spot because they're usually a different colour to the rest - depends on the theme
+
+
+
+### Tasks
+
+1. Open a new RMarkdown document 
+2. Change the YAML options to have a title of 'FundRmentals' &amp; the author as yourself
+
+
+???
+
+one of the best ways of working in rstudio, and the way we've predominantly taught students, is to use an RMarkdown document, in this types of documents, we can combine code and normal text, 
+you'll know its an RMarkdown doc, because it has the file extension .Rmd, theyre made up of 3 components which is the yaml, body text, and code chunks
+
+the yaml sets the options for our document, we can use it to specify the title, the author, and what type of output file we want, such as html, pdf, word doc etc., it's really easy to switch between different document types, so it's not a problem if you start off with html and then decide you want a word output instead, you can just change the option within the yaml
+
+then we have body text, which we have to format using something called markdown, which confusingly, is just a way that we mark up text, so we have to use different symbols to denote different things, like what's a heading and at what level, and what we want to be in bold etc., i'm not going to describe all the ways you can format it but ive linked to a cheat sheet which you can refer to, or all the info is in the tutorial too
+
+&amp; then finally, our third component is our code chunk, this is where we have little fenced off boxes where we can write code inside them
+
+**demo Rmd creation &amp; changing yaml options**
+
+---
+
+# Knitting &lt;img src="knitbutton.png" width="108" /&gt;
+
+- To produce our nicely formatted document with our body text &amp; code embedded into it, we have to render aka **Knit** our document 
+
+- Knitting the document will run all of the code in a fresh session, so the order we use commands &amp; objects in this file is really important (inappropriate ordering is often a cause of errors in students' documents)
+
+- You can knit to different file types very easily, but when knitting to a Word doc, if you have the file open in Word at the same time as when you try to knit from RStudio you'll get an error - close Word, knit the RMarkdown again &amp; it'll work fine - students will sometimes do this  
+
+
+### Tasks
+
+1. Knit your RMarkdown document by pressing the **Knit** button or by using **Ctrl + Shift + K**/**Command + Shift + K** (this will open up a menu where you can decide where to save it - choose the `r_docs` folder we created earlier)
+2. Look at the pretty document you created!
+
+???
+
+To produce our nicely formatted document with our body text &amp; code embedded into it, we have to render it, this is known as **Kniting** our document
+
+knitting then runs all the code in a fresh session, and will compile the document, with any output of code, and any formatted text, because it runs everything in a new session, the order that you do things within it is very important, but i'll talk more about that next week
+
+you can knit to pdfs, htmls, word docs etc., but often when students are working with a word doc, they'll have the knitted, formatted file open in word, and they'll try to knit it again in rstudio but it'll show an error, and they panic, so you just need to make sure to close the word doc version 
+
+Weird quirk of lab PCs is that you must store your RMarkdown files in OneDrive, unsure if this applies to office PCs yet...i'm still waiting on a pc, so i havent been able to test this with office computers, the lab computers work in an unusual way when knitting files, and i dont know if this applies to office pcs too yet so this might not work for some of you, and if it doesnt, dont worry
+
+**demo knitting &amp; output * files pane**
+
+**demo deleting stuff out**
+
+---
+
+# Using Code Chunks
+
+.pull-left[
+
+#### Inserting code chunks:
+
+- We can use **Ctrl/Command + Alt + I** to insert a code chunk where our cursor is
+
+- Or we can use the insert chunk button:
+
+&lt;img src="insert.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+
+#### Running code chunks: 
+
+- We can place our cursor on the line we want to run, or select several lines we want to run &amp; press **Ctrl/Command + Enter**
+
+- Or we can use this little green 'play button':
+
+&lt;img src="run.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+???
+
+we'll cover functions etc., in the next tutorial &amp; next week's session so dont worry about not understanding everything right now
+we'll also get lots of practice doing this, so this will become more familiar to you over time
+
+when we write code in an rmarkdown document, we use code chunks, and this is what they look like: they have these back ticks, curly brackets, and this little r, generally, its good practice to have quite a few of these code chunks, it can make finding errors much easier when you separate it out into different parts, but you also shouldnt have a code chunk for each line of code, 
+
+to insert them theres a couple ways we can do it
+
+**demo inserting**
+
+to actually run whats in them, there's a couple days we can do it too
+
+**demo running**
+
+there's lots of options we can specify for these code chunks to decide whether we want the code to be run, or if we want to show only the output, or if we want to show the code etc., but i'm gonna go over that in the next few weeks
+
+---
+
+# Installing &amp; Loading Packages
+
+- **R packages** are 'add-ons' that build on the functionality of RStudio
+  + Created by people all over the world &amp; mostly include **functions** that we can use for a range of tasks
+  + We download the packages onto our PC, then load them in RStudio whenever we want to use them 
+  
+- To **install packages**, we can use the `install.packages()` function in the **Console** like this:
+
+
+```r
+install.packages("package_name_goes_here")
+```
+
+- To **load packages**, we use the `library()` function in a **Code Chunk** like this: 
+
+
+```r
+library("package_name_goes_here")
+```
+
+### Tasks
+
+1. Following the examples above, install the **tidyverse** package
+2. &amp; load **tidyverse** in a new code chunk (make sure to run the code!)
+
+
+???
+
+we can use code chunks to run all different commands, typically, our first code chunk in a document will be where we load any packages we want to use
+
+packages are essentially add ons that increase the functionality of rstudio, Packages typically contain functions that we can use to tell R to do lots of different things, or they might include data, tutorials, or templates that we can use for different types of documents
+
+to be able to use packages we first have to install them onto our pc, and then we can access them in rstudio by loading the, 
+
+to install packages for the first time, we need to use a function called install.packages, to briefly explain what a function is, it is a pre-defined command we can use to do different things in RStudio, so this function, takes the name of a package, and installs it for us
+
+another function we'll pretty much always use is the library function, this command takes the name of the package that we want to use in rstudio, and loads it so that we can use any of the other functions, data, or components it contains within that session, we have to load packages in any document that we want to use them in 
+
+so to install a package in rstudio, we would use the console because we dont need to keep that information in the future, we can just install it once, and then we dont need to install it anymore unless we want to update it
+
+**demo install.packages**
+
+then to actually load it in a session so we can use it, we have to use the library command 
+
+**demo library**
+
+the tutorial will go into more detail on packages and functions so i'll go over this more next week, so this will become clearer, but for now i just want you to have a go at running some code and using code chunks within rstudio
+
+so using these examples above, have a go at installing and loading a package called tidyverse, this is a package that we'll use very often, 
+
+---
+
+# Reading in Data &amp; File Paths
+
+- To import data, we need to use an appropriate **function** &amp; we need to specify the directions to that file 
+- We can have two different types of directions: **absolute** &amp; **relative**
+
+
+```r
+"C:/Users/danie/Documents/fundRmentals/data/data.csv"
+```
+
+
+```r
+"./data/data.csv"
+```
+
+- We can use **../** to jump up a level in our folder structure so **../data/data.csv** would take us out of the folder we were in, and then into the data folder
+- When writing file paths, we should think about where we currently are working from on our PC i.e., where our RMarkdown is saved, and where we need to get to i.e., where our data is saved
+
+
+
+### Task
+
+1. Download [this file](https://raw.githubusercontent.com/de84sussex/sussex_fundrmentals/master/docs/empathy_data.csv) by right-clicking on the page that opens, and saving the file into your **data** folder
+
+
+???
+
+tidyverse will be the focus of the next tutorial, so im not gonna go into it too much now, but its basically a package of packages, and two of those packages are used to read in data, but to be able to use them, we need to know the file path of our datafile, 
+
+there are two types of file paths, we have absolute and we have relative, absolute start from the inner depths of our pc, and relative file paths are ones that are relative to our current location which look like these:
+
+The ./ in the **relative** example is just a way of writing starting where you are, step into the data folder, if we need to jump up a level, we can use ../
+
+Relative file paths are the best to use because they work across devices when we use R Projects, we dont have to worry about having different file structures across machines, theyre also nice and short to type out
+
+when writing file paths, the easiest way to think of them, is to think about where you are currently located on your pc, and where you need to get to, and what steps you need to take to get there
+
+to practice using these, i want you to download this file here, if you go to week 2 on the webpage, you can click on the link, then right click and save as, and then make sure it is in your data folder of the r project that we created earlier
+
+---
+
+
+# Reading in Data &amp; File Paths
+
+- To access data in RStudio, we need to use an appropriate **function** &amp; we need to specify the directions to that file, we can have two different types of 'directions'
+
+- We can use all different types of data files, the most common being .csv &amp; .sav
+
+- The **read_csv()** &amp; **read_sav()** functions can help us read in these data, we just need to specify the file path inside them
+
+
+```r
+readr::read_csv("./directions/to/the/data/file/go/here.csv")
+```
+
+
+```r
+haven::read_sav("./directions/to/the/data/file/go/here.csv")
+```
+
+### Task
+
+1. Read the data file into RStudio in a new code chunk by following the **read_csv** example 
+
+**Hint**: You'll need to jump up a level, you can do this by using ../
+
+???
+
+once we have our data, and we know where we are, and where we need to get to, we can write this file path into one of our data reading functions, we have different functions for different data types, but the most common we all use are csv files, and sav files, these are what we might use in excel or spss
+
+to read in these files, we can follow these examples here where we specify our function, and then within speech marks, we specify our file path
+
+we'll learn more about how functions work in the following week, so dont worry too much, for now i just want you to get used to running lines of code in RStudio
+
+so based on these examples, have a go at reading in the CSV, you only need to use one of these functions that works with CSV files, you should do this in a new code chunk, so have a go at creating one, if you need a reminder let me know, and then try running it, which you can do by the little green play button or selecting the line and pressing ctrl + enter
+
+**download data, n demo read csv**
+
+---
+
+# Saving Files
+
+- You'll know if a file has any unsaved edits by looking at the tab at the top of the source pane, depending on the theme you use, the colour will change depending on whether it is saved or not
+
+- Mine is highlighted in blue when there are unsaved edits, or white when it is saved
+
+&lt;img src="save.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+- To save your file, you can go to **File &gt; Save** OR use the keyboard shortcut **Ctrl + S**/**Command + S**
+
+
+### Task
+
+1. Save your RMarkdown doc from today, so we can continue working on it next week
+
+---
+
+# Next Steps: Installing `discovr`
+
+**Step 1**: Install the package by running each of the lines below in the **Console**
+
+.tiny[
+
+
+```r
+install.packages("learnr")
+```
+
+
+```r
+install.packages("remotes")
+```
+
+
+```r
+remotes::install_github("profandyfield/discovr")
+```
+
+]
+
+**Step 2**: Close RStudio &amp; open it again
+
+**Step 3**: Check the **Tutorial** pane exists &amp; that you can see the different tutorials
+
+**Step 4**: Access the `discovr_01` tutorial by finding it in the **Tutorial** pane OR by running the below in the console:
+
+.tiny[
+
+
+```r
+learnr::run_tutorial("discovr_01", package = "discovr")
+```
+
+]
+
+**Step 5**: Work through the tutorial ready for our session next week 
+
+???
+
+From now on, we'll use tutorials that we open from within RStudio
+
+We'll be using discovr - an R package written by andy field that covers all key analyses/skills 
+
+So to do this weeks tutorial, we need to download the discovr package
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "monokai",
+"highlightLines": true,
+"highlightSpans": true,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

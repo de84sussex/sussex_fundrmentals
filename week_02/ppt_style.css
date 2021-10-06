@@ -1,0 +1,50 @@
+
+
+.bold {font-weight: bold;} 
+
+.red {color: red;}
+
+.orange {color: orange}
+
+.green {color: #0bd915}
+
+.italic {font-style: italic;}
+
+.pink {color: lightpink}
+
+
+a:hover {
+  border-bottom: 1px solid orange;
+  font-weight: bold;}
+
+
+.large {
+  font-size: 1.7em;
+}
+
+.small {
+  font-size: 0.7em;
+}
+
+.teeeny {
+  font-size: 0.6em;
+}
+
+.tiny .remark-code { /*Change made here*/
+  font-size: 70% !important;
+}
+
+
+.bigger .remark-code { /*Change made here*/
+  font-size: 115% !important;
+}
+
+
+
+
+
+.teeny .remark-code { /*Change made here*/
+  font-size: 50% !important;
+}
+
+

@@ -23,6 +23,21 @@ Slides [(*open in a new tab*)](){target="_blank"}
 </iframe>
 
 
+### Materials
+
+Download the data file [here](https://raw.githubusercontent.com/de84sussex/sussex_fundrmentals/master/docs/empathy_data.csv), by right-clicking on the page that opens, and saving the file into the **data** folder of your fundRmentals R Project. 
+
+The [dataset](https://journals.sagepub.com/doi/10.1177/0301006618809919) we're using examined whether people people differ on their empathy towards avatars when they are human-like vs robotic. 
+
+There are four measures relating to the experimental design: **Participant ID**, **Condition** (1-4), **Humanness** (1 = Human-like, 2 = Robot-like), & **Harm** (1 = Unharmed, 2 = Harmed).
+
+There are two participant demographic variables: **Gender** (1 = M, 2 = F) & **Age** (in years).
+
+There are four outcome variables where participants were asked to rate whether the avatar can feel pain (variable name: **Pain**, scored from 1-7), whether it has experience (variable name: **Experience**, scored from 1-7), their level of empathy towards the avatar (variable name: **Q14097**, scored from 1-7), & their perceived attractiveness of the avatar (variable name: **Q15620**, scored from 1-7).
+
+
+### Complete the tutorials for next week: 
+
 :::ojtask
 
 Work through the discovr_02 & the discovr_05 tutorials by pasting the below code into the **Console** in RStudio & pressing **Enter**.

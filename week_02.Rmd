@@ -20,24 +20,34 @@ Slides [(*open in a new tab*)](){target="_blank"}
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
     height="360"
-    src="">
+    src="./week_02/index.html">
 </iframe>
+
+
+### Materials
+
+Download the data file [here](https://raw.githubusercontent.com/de84sussex/sussex_fundrmentals/master/docs/empathy_data.csv), by right-clicking on the page that opens, and saving the file into the **data** folder of your R Project. 
 
 
 ### Complete the tutorial for next week: 
 
 You need to install the `discovr` package to complete this week's tutorial.
 
-If you didn't install it in the HappyHouR last week, open RStudio, paste each line of code below into the **Console**, & press **Enter** to run them one by one. 
+If you didn't install it in the HappyHouR this week, open RStudio, paste each line of code below into the **Console**, & press **Enter** to run them one by one. 
 
 ```{r, eval = F, echo = T}
-
 install.packages("learnr")
-install.packages("remotes")
-remotes::install_github("profandyfield/discovr")
-
 ```
 
+```{r, eval = F, echo = T}
+install.packages("remotes")
+```
+
+```{r, eval = F, echo = T}
+remotes::install_github("profandyfield/discovr")
+```
+
+Once installed, you can access the tutorial for this week using the code below.
 
 :::ojtask
 

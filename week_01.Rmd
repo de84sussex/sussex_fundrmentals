@@ -22,8 +22,6 @@ Slides [(*open in a new tab*)](){target="_blank"}
 </iframe>
 
 
-*Click on the slides below & press the left/right arrows on your keyboard to change slides or [open in a new tab](./fundRmentals_intro/index.html){target="_blank"}*
-
 
 ### Downloading R & RStudio
 
