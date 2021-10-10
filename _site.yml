@@ -42,6 +42,8 @@ navbar:
         href: ./HD.html
       - text: "Writing Rticles"
         href: ./rmd_tutorial.html
+      - text: "Writing a DisseRtation"
+        href: ./disso_rmarkdown_tutorial.html
         
   search: false
 output: distill::distill_article

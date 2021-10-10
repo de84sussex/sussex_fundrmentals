@@ -1,5 +1,5 @@
 ---
-title: "Week 02"
+title: "Week 02: R Basics"
 output:
   distill::distill_article:
     toc: true

@@ -86,27 +86,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>FundRmentals: Week 01: IntRoductions</title>
+  <title>FundRmentals: Writing a Dissertation in RMarkdown</title>
 
+  <meta property="description" itemprop="description" content="Work through this tutorial &amp; the task boxes to help you get started with writing your dissertation in RMarkdown!"/>
 
   <link rel="icon" type="image/png" href="img/Lightbulb.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="FundRmentals: Week 01: IntRoductions"/>
+  <meta property="og:title" content="FundRmentals: Writing a Dissertation in RMarkdown"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Work through this tutorial &amp; the task boxes to help you get started with writing your dissertation in RMarkdown!"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="FundRmentals"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="FundRmentals: Week 01: IntRoductions"/>
+  <meta property="twitter:title" content="FundRmentals: Writing a Dissertation in RMarkdown"/>
+  <meta property="twitter:description" content="Work through this tutorial &amp; the task boxes to help you get started with writing your dissertation in RMarkdown!"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Week 01: IntRoductions"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","theme"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["dans-theme.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Writing a Dissertation in RMarkdown"]},{"type":"character","attributes":{},"value":["Work through this tutorial & the task boxes to help you get started with writing your dissertation in RMarkdown!  \n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2438,6 +2441,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }</style>
   <!--/radix_placeholder_distill-->
   <script src="site_libs/header-attrs-2.9.4/header-attrs.js"></script>
+  <script src="site_libs/clipboard-2.0.6/clipboard.min.js"></script>
+  <link href="site_libs/xaringanExtra-clipboard-0.2.4/xaringanExtra-clipboard.css" rel="stylesheet" />
+  <script src="site_libs/xaringanExtra-clipboard-0.2.4/xaringanExtra-clipboard.js"></script>
+  <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2457,7 +2464,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Week 01: IntRoductions","authors":[]}
+{"title":"Writing a Dissertation in RMarkdown","description":"Work through this tutorial & the task boxes to help you get started with writing your dissertation in RMarkdown!","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2513,10 +2520,10 @@ ExtRas
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Week 01: IntRoductions</h1>
+<h1>Writing a Dissertation in RMarkdown</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>Work through this tutorial &amp; the task boxes to help you get started with writing your dissertation in RMarkdown!</p></p>
 </div>
 
 
@@ -2525,26 +2532,194 @@ ExtRas
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#happyhour">HappyHouR</a></li>
-<li><a href="#downloading-r-rstudio">Downloading R &amp; RStudio</a></li>
-<li><a href="#complete-the-tutorial-for-next-week">Complete the tutorial for next week:</a></li>
+<li><a href="#workflow">Workflow</a></li>
+<li><a href="#installing-papaja">Installing papaja</a></li>
+<li><a href="#using-papaja">Using <code>papaja</code></a></li>
+<li><a href="#yaml-options">YAML Options</a></li>
+<li><a href="#referencing-.bib-files">Referencing &amp; .bib files</a></li>
+<li><a href="#inserting-student-support-stickers-in-r">Inserting Student Support Stickers in R</a></li>
+<li><a href="#thats-all-there-is-to-it">&amp; that’s all there is to it! 💃 🥳</a></li>
 </ul>
 </nav>
 </div>
-<h3 id="happyhour">HappyHouR</h3>
-<p>Slides <a href="https://fundrmentals.netlify.app/fundrmentals_intro/#1" target="_blank">(<em>open in a new tab</em>)</a></p>
-<iframe id="inlineFrameExample" title="Inline Frame Example" height="360" src="https://fundrmentals.netlify.app/fundrmentals_intro/#1">
-</iframe>
-<h3 id="downloading-r-rstudio">Downloading R &amp; RStudio</h3>
-<p>When downloading software, check that it is going into a sensible location on your pc - avoid downloading them to OneDrive!</p>
-<h4 id="step-1-download-r">Step 1: Download R</h4>
-<p>Download the <a href="https://cloud.r-project.org/bin/macosx/R-4.0.2.pkg">MacOS version</a> or the <a href="https://cran.r-project.org/bin/windows/base/old/4.0.5/R-4.0.5-win.exe">Windows version</a>.</p>
-<h4 id="step-2-download-rstudio">Step 2: Download RStudio</h4>
-<p>Download the <a href="https://download1.rstudio.org/desktop/macos/RStudio-1.3.1093.dmg">MacOS version</a> or the <a href="https://download1.rstudio.org/desktop/windows/RStudio-1.3.1093.exe">Windows version</a>.</p>
-<h3 id="complete-the-tutorial-for-next-week">Complete the tutorial for next week:</h3>
-<div class="ojtask">
-<p>Work through <a href="http://milton-the-cat.rocks/learnr/r/r_getting_started/">this tutorial</a> 😄</p>
+<h3 id="workflow">Workflow</h3>
+<p>The best way to work within R is to create an R Project for each specific project you work on. This idea applies to your dissertation too where it’s best to create an R Project solely for your dissertation.</p>
+<div class="task">
+<p>Create a dissertation R Project in a sensible location on your device</p>
 </div>
+<p>You should use this newly created R Project for all dissertation related files to keep everything all in one place and nicely organised.</p>
+<p>You should then aim to create the following folders:</p>
+<ul>
+<li><p>data</p></li>
+<li><p>r_docs</p></li>
+<li><p>misc_docs</p></li>
+<li><p>references</p></li>
+</ul>
+<p>Within these folders, <code>data</code> should contain any raw data, <code>r_docs</code> should contain any Rmds or R scripts, <code>misc_docs</code> (or just <code>docs</code> if you prefer) should contain any documents not created in RStudio such as ethics forms, and <code>references</code> should contain saved copies of articles you have read and will cite in your writeup, and .bib files (more on these <a href="#referencing-.bib-files">later..</a>). You don’t have to follow this workflow at all, but you might find it helpful to structure your files in this way so that things don’t get muddled!</p>
+<div class="task">
+<p>Within the R Project you’ve just created, create 4 folders to contain your <code>data</code>, <code>r_docs</code>, <code>misc_docs</code>, and <code>references</code> (or use whichever names you prefer)</p>
+</div>
+<p><br></p>
+<h3 id="installing-papaja">Installing papaja</h3>
+<p><code>papaja</code> is an <a href="http://frederikaust.com/papaja_man/">R package</a> that contains an Rmd template for producing APA style reports. It’s what I recommend to use when writing up your dissertation in RMarkdown to create a pretty report when you knit your document (it’s also what I wrote my <a href="https://sro.sussex.ac.uk/id/eprint/94942/1/Evans%2C%20Danielle%20Nicole.pdf">PhD thesis</a> with &amp; is one of my fave packages, in close competition with the <a href="https://github.com/brooke-watson/BRRR">BRRR package</a> - seriously, go check it out right now! 😎).</p>
+<p>With <code>papaja</code> you can knit your Rmd to a pdf or word document so you can use whichever format you prefer, and it’s just a really nice way of creating reproducible analyses that are super pretty with your report automatically formatted in APA style - a total win-win!</p>
+<p>It’s best to install <code>papaja</code> as soon as possible in the semester (ideally week 1) so that I can troubleshoot any problems early on. The following steps will guide you through the installation process.</p>
+<h4 id="step-1-install-a-tex-distribution">Step 1: install a TeX distribution</h4>
+<p>LaTeX is needed when knitting from an Rmd to a pdf document. Installing a TeX distribution on your device is arguably the worst part of the installation process. For more info see the <a href="http://frederikaust.com/papaja_man/introduction.html#getting-started">installation details..</a></p>
+<p>To install it in RStudio, you can run the following lines in the console:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'>if</span><span class='op'>(</span><span class='op'>!</span><span class='st'>"tinytex"</span> <span class='op'>%in%</span> <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>rownames</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/utils/installed.packages.html'>installed.packages</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span> <span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"tinytex"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>tinytex</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/tinytex/man/install_tinytex.html'>install_tinytex</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<h4 id="step-2-install-papaja">Step 2: install papaja</h4>
+<p>Installing the <code>papaja</code> package is more straightforward, firstly we need to check that we have <code>devtools</code> installed (the first line below), and secondly we need to install <code>papaja</code> from github rather than from the cran (the second line).</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'>if</span><span class='op'>(</span><span class='op'>!</span><span class='st'>"devtools"</span> <span class='op'>%in%</span> <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>rownames</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/utils/installed.packages.html'>installed.packages</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span> <span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"devtools"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>devtools</span><span class='fu'>::</span><span class='fu'><a href='https://devtools.r-lib.org//reference/remote-reexports.html'>install_github</a></span><span class='op'>(</span><span class='st'>"crsh/papaja"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<div class="task">
+<p>Install <code>tinytex</code> and <code>papaja</code> using the code above!</p>
+</div>
+<p><br></p>
+<h3 id="using-papaja">Using <code>papaja</code></h3>
+<p>Once everything’s installed, the Rmd template from the <code>papaja</code> package can be easily accessed through the main menu. To open the template go to File &gt; New File &gt; R Markdown… in the window that pops up, click on From Template &gt; APA article (6th edition) &gt; OK</p>
+<div class="task">
+<p>Open the APA article template using the instructions above</p>
+</div>
+<p>This template is very similar to the standard Rmd that you’re used to working with previously. The template still contains three main components:</p>
+<ul>
+<li><p>The YAML for document metadata</p></li>
+<li><p>R Code Chunks for code</p></li>
+<li><p>Markdown for your main writeup</p></li>
+</ul>
+<p>The main difference between this template and a normal Rmd is that the YAML just contains some additional options.</p>
+<div class="task">
+<p>Knit the document as it is to check it all works!</p>
+</div>
+<p>After knitting, you should have an APA style article magically appear! 🤩</p>
+<div class="sol">
+<p>Your dissertation should be submitted with the file name: cand_no_report</p>
+<p>When creating the Rmd for your dissertation writeup, save it with this file name from the start to avoid any issues later on &amp; remember to save it in the r_docs folder of your R Project as suggested in the <a href="#workflow">workflow</a></p>
+</div>
+<p><br></p>
+<h3 id="yaml-options">YAML Options</h3>
+<p>You might notice in the Rmd that there are quite a few extra YAML options we can set that will change various parts of the document. Some of these options are more useful/relevant than others so I’ve included the main ones you’ll be using below, and the rest you can delete from the YAML.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/yaml.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div class="sol">
+<p>To avoid more errors &amp; to check your wordcount &amp; spelling more accurately, I recommend knitting to a Word doc</p>
+<p>This is easily changed in the final line of the YAML above!</p>
+</div>
+<p><br></p>
+<h3 id="referencing-.bib-files">Referencing &amp; .bib files</h3>
+<p>To automatically reference articles/books/other sources in RMarkdown, the setup is slightly different to what you will have used previously. Instead, we use BibTeX references which we include within a .bib file that we specify in the YAML of our Rmd (see image above). There are many pros to using this approach in that you don’t ever have to worry again about formatting your in-text citations to APA style, and that your reference list is automatically generated and formatted (amazing right?!)</p>
+<p>These files can feel (&amp; look) a little confusing to start with but I personally find it much better this way than what I did before and once you get the hang of it it’s much quicker!</p>
+<p>To create a .bib file it’s super easy, just follow the steps below!</p>
+<div class="task">
+<p>In your dissertation R Project, open up your working directory by going to the Files Pane &gt; More &gt; Show Folder in New Window</p>
+</div>
+<p>If you completed the task box above, your dissertation R Project folder should now open.</p>
+<div class="task">
+<p>In this folder, open a new plain text document by right-click &gt; New &gt; Text Document &amp; name it diss_references (or whatever you prefer)</p>
+<p>Once created, rename the file to have a .bib extension rather than a .txt extension &amp; you will have created your .bib file!</p>
+<p>Then move this file to the references folder of your R Project to keep with the <a href="#workflow">workflow</a></p>
+</div>
+<p><br></p>
+<p>OK, so now we have created our .bib file, there are two things we need to do:</p>
+<ol type="1">
+<li><p>Add this file path to the bibliography part of the YAML in our Rmd</p></li>
+<li><p>Add some references</p></li>
+</ol>
+<p>For step 1, it’s nice and simple, we just need to include the file path like the example below:</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/yaml2.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div class="task">
+<p>Add the .bib file you just created to the YAML</p>
+</div>
+<p><br></p>
+<p>Now we need to add some references to our .bib file!</p>
+<p>BibTeX references look like this:</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/bibex.png" width="100%" /></p>
+</div>
+<p>Where “article” is the type of the source, “evans2020internalizing” is the label, and the remaining fields refer to the different components of a bibliography item. The BibTeX references of articles are given on many journal webpages, but the easiest way to get them IMO is by using the Google Scholar Button for Chrome (see the steps below).</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/gsc.gif" width="60%" style="display: block; margin: auto;" /></p>
+</div>
+<div class="task">
+<p>Search for a relevant article &amp; copy/paste the entry to your .bib file (you can open the .bib file in RStudio)</p>
+</div>
+<p><br></p>
+<p>&amp; finally we need to insert the references to the Rmd!</p>
+<p>There are two ways of inserting references, you can do it manually by inputting the BibTeX label, or you can use the citr RStudio add-in which allows you to search for the reference from the .bib file.</p>
+<p>To insert them by hand, it’s super straightforward, the table below (taken from the <a href="http://frederikaust.com/papaja_man/writing.html#citations">papaja manual</a>) shows you how to include the reference label and what will be shown in the knitted file.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/refexamples.png" width="100%" /></p>
+</div>
+<p><br></p>
+<p>Alternatively, you can use the citr addin to search for the references in your .bib file. Within RStudio, find the “Addins” menu underneath the Tools &amp; Help buttons, citr can be accessed from there.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/citr.gif" width="70%" style="display: block; margin: auto;" /></p>
+</div>
+<p><br></p>
+<div class="sol">
+<p>You will see a “References” section at the end of the papaja template, you don’t need to edit this, just leave it as it is - everything is automatic!</p>
+</div>
+<p><br></p>
+<h4 id="referencing-r-packages">Referencing R Packages</h4>
+<p>You will see the below code in the papaja Rmd template. What this does is automatically include any packages you use within the references section. You don’t need to edit this in anyway, just leave as it is and remember to cite the R packages you use for analysis in the method/results section of your report.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='st'><a href='https://github.com/crsh/papaja'>"papaja"</a></span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/pkg/papaja/man/r_refs.html'>r_refs</a></span><span class='op'>(</span><span class='st'>"r-references.bib"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<p><br></p>
+<h3 id="inserting-student-support-stickers-in-r">Inserting Student Support Stickers in R</h3>
+<p>Including a student support sticker when writing your dissertation in R is super straightforward; you can use the code below modifying the file path to where your sticker is saved (this could be in the <code>misc_docs</code> folder of your R Project for example), and should be included in a code chunk in the most appropriate section of your Rmd.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>knitr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/knitr/man/include_graphics.html'>include_graphics</a></span><span class='op'>(</span><span class='st'>"path_to_file"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<p><br></p>
+<h3 id="thats-all-there-is-to-it">&amp; that’s all there is to it! 💃 🥳</h3>
+<p>You can now start writing up your dissertation in RMarkdown woohoo!</p>
+<p>There are a few things to keep in mind to make this process easier:</p>
+<ul>
+<li><p>Knit often and after any major additions/changes, errors can be tricky to solve so knitting often will help you catch where problems occur</p></li>
+<li><p>Make sure your file knits before you leave it for the day, it’s better to work on knitting problems whilst everything you’ve been working on is fresh in your mind</p></li>
+<li><p>Make sure your references are complete and correct as you go - don’t leave it until you have 100 references to go back to and check the page numbers of</p></li>
+<li><p>By default, <code>papaja</code> sets global chunk options to <code>echo = F</code> (code is run but hidden) &amp; <code>messages = F</code>, sometimes you might want to set <code>warnings = F</code> too</p></li>
+<li><p><code>papaja</code> reports all numeric values written using inline code to 2 dp by default</p></li>
+<li><p>To report any equations in your Rmd, enclose it within $</p></li>
+<li><p>References of ‘???’ highlight errors, check the entry exists in your .bib file &amp; check the spelling of it in your Rmd</p></li>
+<li><p>Remember that no duplicate chunk labels are allowed - this will cause an error</p></li>
+<li><p>Don’t install packages in your code chunks - use the console</p></li>
+<li><p>Google really is your best friend for any errors</p></li>
+</ul>
+<p><br></p>
+<p>&amp; Finally, Good Luck! 🌟</p>
 <p><br></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

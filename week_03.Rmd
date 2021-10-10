@@ -1,5 +1,5 @@
 ---
-title: "Week 03"
+title: "Week 03: Inspecting Data"
 output:
   distill::distill_article:
     toc: true
@@ -14,14 +14,17 @@ xaringanExtra::use_clipboard()
 
 ### HappyHouR 
 
-Slides [(*open in a new tab*)](){target="_blank"}
+Slides <!--[(*open in a new tab*)](./week_03/index.html){target="_blank"}
 
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
     height="360"
-    src="">
+    src="./week_03/index.html">
 </iframe>
 
+-->
+
+<!--
 
 ### Materials
 
@@ -35,12 +38,19 @@ There are two participant demographic variables: **Gender** (1 = M, 2 = F) & **A
 
 There are four outcome variables where participants were asked to rate whether the avatar can feel pain (variable name: **Pain**, scored from 1-7), whether it has experience (variable name: **Experience**, scored from 1-7), their level of empathy towards the avatar (variable name: **Q14097**, scored from 1-7), & their perceived attractiveness of the avatar (variable name: **Q15620**, scored from 1-7).
 
+-->
 
-### Complete the tutorials for next week: 
+### Complete the tutorial for next week: 
+
+The data in the tutorial for this week focuses on viral challenges: 
+
+*"Specifically we’ll use data from the ice bucket challenge. You can check Wikipedia for the full story, but it all started (arguably) with golfer Chris Kennedy tipping a bucket of iced water on his head to raise awareness of the disease amyotrophic lateral sclerosis (ALS, also known as Lou Gehrig’s disease). The idea is that you are challenged and have 24 hours to post a video of you having a bucket of iced water poured over your head. In this video you also challenge at least three other people. If you fail to complete the challenge your forfeit is to donate to charity (in this case ALS). Many people completed the challenge and made donations.*
+
+*The ice bucket challenge generated something like 2.3 million on YouTube. The data are stored in **ice_tib**, which contains one variable **upload_day** that is the number of days after Chris Kennedy’s initial challenge that each of 2,323,452 ice bucket related videos were uploaded to YouTube. For example, if the value is 21 it means that the video was uploaded 21 days after Chris Kennedy’s initial challenge."* 
 
 :::ojtask
 
-Work through the discovr_02 & the discovr_05 tutorials by pasting the below code into the **Console** in RStudio & pressing **Enter**.
+Work through the **Summarizing data (1)** & **Creating a summary table (2)** sections of the **discovr_02** tutorial by pasting the below code into the **Console** in RStudio, pressing **Enter** & skipping to the relevant sections.
 
 ```{r, eval = F, echo = T}
 
@@ -48,12 +58,8 @@ learnr::run_tutorial("discovr_02", package = "discovr")
 
 ```
 
-```{r, eval = F, echo = T}
-
-learnr::run_tutorial("discovr_05", package = "discovr")
-
-```
-
 :::
+
+*Est. time: 20 mins*
 
 <br>

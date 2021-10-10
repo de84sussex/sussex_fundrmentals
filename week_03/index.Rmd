@@ -1,0 +1,344 @@
+---
+title: "FundRmentals 03"
+author: "Dr Danielle Evans | University of Sussex"
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "ppt_style.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: monokai
+      highlightLines: true
+      highlightSpans: true
+      ratio: '16:9'
+---
+
+```{r, echo=FALSE, eval = F}
+
+xaringanExtra::use_logo("../img/logo.png", width = "30px", height = "30px", link_url = "https://fundrmentals.netlify.app/")
+
+```
+
+```{r setup, include=FALSE}
+library(xaringanthemer)
+library(xaringanExtra)
+library(tidyverse)
+
+options(htmltools.dir.version = FALSE)
+xaringanExtra::use_clipboard()
+
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+
+style_mono_light(
+  base_color = "#23395b"
+)
+
+```
+
+# Overview
+
+- Q&A
+
+- Session setup
+
+- Packages, functions, & objects
+
+- Importing data
+
+- Inspecting data
+
+- Next steps
+
+---
+
+class: middle, center
+
+# Any questions from the last tutorial?
+
+---
+
+# Setup
+
+1. Open RStudio
+
+1. Create an R Project for the fundRmentals course or open the project we made last week
+
+  + To create one, go to **File**, **New Project**, **New Directory**, **New Project**, give your project a name, then click **Create**
+  
+  + Then create **data** & **r_docs** folders (in the **Files pane** click **New Folder**)
+
+  + To open your project from last week, check if you're already in it by looking at the project name in the top right corner of RStudio, if you are not, click on the dropdown arrow and select it from the list
+
+1. Create a new RMarkdown document
+
+  + Go to **File**, **New File**, **RMarkdown**, name it **week_03**, then click **Create**
+
+1. Delete everything in the RMarkdown document that we don't need: from line 11 down, then save your document to the **r_docs** folder
+
+
+
+???
+
+To start with, we're going to open up RStudio, then we want to open our R Project that we created last week, or if you werent here, we want to create one now, so to create one, we can go to *File*, *New Project*, *New Directory*, *New Project*, give your project a name, then click *Create*
+
+For those of you that created it last week, glance at the top right corner, just underneath the cross to close the window, this shows you what project you're currently in, for all of you, you'll probably already be in your fundrmentals project, so it should say whatever you called it last week there, if it doesnt, click the arrow, and select the project from the list that appears
+
+after we have our project setup, we **all** want to open a new rmarkdown document
+
+to do this, Go to *File*, *New File*, *RMarkdown*, name it *week_03*, then click *Create*
+
+Whenever we open an rmarkdown for the first time, we get a lot of info that we dont need, it just tells us about rmarkdown, so we really only need to read it once, so now delete everything in the RMarkdown document that we don't need: from line 11 down, you can just select it all from line 11 down and press delete
+
+**DEMO WHAT WE SHOULD HAVE**
+
+---
+
+# Packages
+
+- Packages are essentially just add-ons for RStudio
+
+- Last week we learned that we can use **install.packages()** to install most packages we want to use, where we just insert the name of the package in the brackets 
+
+- If you weren't here last week, you need to install **"tidyverse"** on your device
+
+- To do that, we can run the below line in the **Console**
+
+```{r, eval = F}
+install.packages("tidyverse")
+```
+
+???
+
+to briefly recap, packages are essentially just add-ons, they build on the functionality of rstudio
+
+to access these packages in rstudio, we first have to download them to our pc, we only need to do this once, or if we ever want to update our copy of the package, where the creator has made any changes made to it
+
+last week, we learned that we can use install.packages to install most packages, and to use it we need to type this command into the console, type out our package name to be within speechmarks, and then press enter to run it
+
+tidyverse is an example of one of these packages, and one that we'll be using very often, so if you weren't here last week, and missed my email, you should install it now, so you can copy this command here, paste it into the console, and press enter
+
+---
+
+# Loading packages
+
+- To be able to use the contents of package within RStudio, we need to load it
+
+- We can do this by using the **library()** command
+
+- We should load a package once at the top of our RMarkdown document in a code chunk like this: 
+
+```{r, eval = FALSE}
+library("tidyverse")
+```
+
+- If we don't load a package before we try to use it, we'll get an error appear, so it's best to do it right at the beginning
+
+<br>
+
+### Task
+
+1. Load tidyverse in a new code chunk (**Ctrl + Alt + I** or **Cmd + Alt + I** to insert a new chunk) - don't forget to run it!
+
+---
+
+# Functions & assignment <- 
+
+- We've used two functions already today: **install.packages()** & **library()**
+
+- A function is a way of performing a task in R & they follow this type of structure: 
+
+```{r, eval = FALSE}
+package_name::function_name(argument_1 = object_name, argument_2 = 1, argument_3 = TRUE)
+```
+
+- Where inside the brackets, we specify different arguments/options - these could be the names of any data/objects, numbers, logical operators etc, & they give us some type of output
+
+- To save the output of a command, we can use the assignment operator **<-**
+
+- We use **<-** as a way of giving a name to some sort of **object** - whether that's the output of code, a dataset, a string of text, a table, a plot etc, like this: 
+
+.tiny[
+
+```{r, eval = FALSE}
+object_name <- package_name::function_name(argument_1 = object_name, argument_2 = 1, argument_3 = TRUE)
+```
+
+]
+
+--
+
+```{r, eval = FALSE}
+my_name <- "danielle"
+```
+
+
+
+
+???
+
+- We've used two already today: **install.packages()** & **library()** these are part of **Base R** so we didn't need to install any packages to use them
+
+- the package name and double colon isnt stricly necessary, sometimes different packages will have functions of the same name, and we can use this method to specify which we want to use, it's also good style to use, and can help with learning what packages and functions you're using
+
+- We can use the help pane/google to tell us how to use different functions but as you use them more often you won't need to look them up
+
+---
+
+# Importing data with `tidyverse`
+
+- The **read_csv()** function from the **readr** package is one function we can use to import .csv data files
+
+- The **read_sav()** function from the **haven** package is one function we can use to import .sav data files
+
+- They both have one main argument which is the path to the file: 
+
+```{r, eval = FALSE}
+object_name <- readr::read_csv("./directions/to/the/data/file/go/here.csv")
+```
+
+```{r, eval = F}
+object_name <- haven::read_sav("./directions/to/the/data/file/go/here.sav")
+```
+
+### Task
+
+1. Create a new code chunk (**Ctrl + Alt + I** or **Cmd + Alt + I**), open the datafile at [this link](https://raw.githubusercontent.com/de84sussex/sussex_fundrmentals/master/docs/empathy_data.csv), copy the web address into the **readr::read_csv()** function, name the object **emp_data** & run it
+
+
+???
+
+we can use links in the same way that we can use file paths
+
+
+
+
+this is the same data we downloaded last week, so those of you that have it on your pc, you can use a file path to get there instead of using the web address
+
+dont forget to use our lil assignment operator, our lil arrow, to give it a name 
+
+**DEMO LOADING DATA & THE MSG**
+
+---
+
+# Inspecting data
+
+- Below are some useful functions to explore your data, you should run these only in the console or make sure to delete them out of your RMarkdown file after you've seen the output
+- All you need to do is put the name of your **object** into the brackets of the function
+
+.pull-left[ 
+
+To see your raw data:
+
+.tiny[
+
+```{r, eval = F}
+object_name
+```
+
+```{r, eval = F}
+print(object_name)
+```
+
+```{r, eval = F}
+View(object_name)
+```
+
+```{r, eval = F}
+head(object_name)
+```
+
+```{r, eval = F}
+tail(object_name)
+```
+
+]
+
+]
+
+.pull-right[
+
+To see characteristics of your data:
+
+.tiny[
+
+```{r, eval = F}
+str(object_name)
+```
+
+```{r, eval = F}
+summary(object_name)
+```
+
+```{r, eval = F}
+names(object_name)
+```
+
+```{r, eval = F}
+ncol(object_name)
+```
+
+```{r, eval = F}
+nrow(object_name)
+```
+
+]
+
+]
+
+
+**Task**: try out these functions on our **emp_data**
+
+???
+
+**demo them & assignment of nrow**
+
+---
+
+# Sub$etting
+
+- Sometimes, we'll want to access a single column in our dataset, we can do this by subsetting with the $, like this:
+
+```{r, eval = F}
+object_name$column_name
+```
+
+- By subsetting, we can apply functions to a single column
+
+- Two useful functions for inspecting columns are table() & class()
+
+```{r, eval = F}
+table(object_name$column_name)
+```
+
+```{r, eval = F}
+class(object_name$column_name)
+```
+
+**Task**: try out these functions on the **Harm** variable of our **emp_data**
+
+---
+
+# Next Steps
+
+- For next week you should complete the **Summarizing data (1)** & **Creating a summary table (2)** sections of the **discovr_02** tutorial by pasting the below code into the **Console** in RStudio, pressing **Enter** & skipping to the relevant sections
+
+```{r, eval = F, echo = T}
+
+learnr::run_tutorial("discovr_02", package = "discovr")
+
+```
+
+- I'm estimating 20 minutes for this tutorial
+
+- Next week we'll cover the pipe **%>%**, data wrangling & summarising
+
+
+
+
+
+
+
+
+
+
