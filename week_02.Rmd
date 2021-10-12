@@ -61,5 +61,7 @@ learnr::run_tutorial("discovr_01", package = "discovr")
 
 :::
 
+*See how the tutorials work in [this video..](https://www.youtube.com/watch?v=FhoYCsZttGc){target="_blank"}*
+
 <br>
 

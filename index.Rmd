@@ -30,17 +30,16 @@ xaringanExtra::use_clipboard()
 
 <br>
 
-### Complete the week 2 tutorial: 
+### Complete the tutorial for week 2:
+
 
 :::ojtask
 
-```{r, eval = F, echo = T}
-
-learnr::run_tutorial("discovr_01", package = "discovr")
-
-```
+<font size="+1">Access the week 2 tutorial information [here..](https://fundrmentals.netlify.app/week_02.html#complete-the-tutorial-for-next-week)</font>
 
 :::
+
+
 
 
 
