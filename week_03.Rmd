@@ -14,7 +14,7 @@ xaringanExtra::use_clipboard()
 
 ### HappyHouR 
 
-Slides <!--[(*open in a new tab*)](./week_03/index.html){target="_blank"}
+Slides [(*open in a new tab*)](./week_03/index.html){target="_blank"}
 
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
@@ -22,7 +22,7 @@ Slides <!--[(*open in a new tab*)](./week_03/index.html){target="_blank"}
     src="./week_03/index.html">
 </iframe>
 
--->
+
 
 <!--
 
