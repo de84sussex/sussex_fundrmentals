@@ -52,15 +52,15 @@ learnr::run_tutorial("discovr_01", package = "discovr")
 
 Use the table below & hover over the modules to find out what resources cover each topic (i.e., tutorials (tut), practicals (pract) & seminars (sem)), & what week on Canvas to find them! 
 
-- Psychology as a Science (PAAS) <a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img src="./img/PAAS.png"  style="width:4%;height:4%"></a>  
+- Yr 1: Psychology as a Science (PAAS) <a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img src="./img/PAAS.png"  style="width:4%;height:4%"></a> 
 
-- Analysing Data (AnD) <a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img src="./img/AD.png"  style="width:3%;height:3%"></a> 
+- Yr 1: Analysing Data (AnD) <a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img src="./img/AD.png"  style="width:3%;height:3%"></a> 
 
-- Discovering Statistics (DS) <a href="https://canvas.sussex.ac.uk/courses/12722" target="_blank"><img src="./img/DS.png"  style="width:3%;height:3%"></a> 
+- Yr 2: Discovering Statistics (DS) <a href="https://canvas.sussex.ac.uk/courses/12722" target="_blank"><img src="./img/DS.png"  style="width:3%;height:3%"></a> 
 
-- Qualitative and Quantitative Methods (QQM) <a href="https://canvas.sussex.ac.uk/courses/12657" target="_blank"><img src="./img/QQM.png"  style="width:3%;height:3%"></a> 
+- Yr 2: Qualitative and Quantitative Methods (QQM) <a href="https://canvas.sussex.ac.uk/courses/12657" target="_blank"><img src="./img/QQM.png"  style="width:3%;height:3%"></a> 
 
-- SeminRs <a href="https://and.netlify.app/seminr/" target="_blank"><img src="./img/SMR.png"  style="width:4%;height:4%"></a> 
+- Yrs 1 & 2: SeminRs <a href="https://and.netlify.app/seminr/" target="_blank"><img src="./img/SMR.png"  style="width:4%;height:4%"></a> 
 
 
 
