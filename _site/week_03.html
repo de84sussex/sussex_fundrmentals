@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,13 +77,14 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>FundRmentals: Week 03: Inspecting Data</title>
@@ -1601,7 +1602,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2535,9 +2539,16 @@ ExtRas
 </nav>
 </div>
 <h3 id="happyhour">HappyHouR</h3>
-<p>Slides <a href="./week_03/index.html" target="_blank">(<em>open in a new tab</em>)</a></p>
-<iframe id="inlineFrameExample" title="Inline Frame Example" height="360" src="./week_03/index.html">
+<p>Slides <a href="https://fundrmentals-slides.netlify.app/week_03/index.html" target="_blank">(<em>open in a new tab</em>)</a></p>
+<!--
+
+<iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    height="360"
+    src="./week_03/index.html">
 </iframe>
+
+-->
 <!--
 
 ### Materials
@@ -2555,8 +2566,8 @@ There are four outcome variables where participants were asked to rate whether t
 -->
 <h3 id="complete-the-tutorial-for-next-week">Complete the tutorial for next week:</h3>
 <p>The data in the tutorial for this week focuses on viral challenges:</p>
-<p><em>"Specifically we’ll use data from the ice bucket challenge. You can check Wikipedia for the full story, but it all started (arguably) with golfer Chris Kennedy tipping a bucket of iced water on his head to raise awareness of the disease amyotrophic lateral sclerosis (ALS, also known as Lou Gehrig’s disease). The idea is that you are challenged and have 24 hours to post a video of you having a bucket of iced water poured over your head. In this video you also challenge at least three other people. If you fail to complete the challenge your forfeit is to donate to charity (in this case ALS). Many people completed the challenge and made donations.</em></p>
-<p><em>The ice bucket challenge generated something like 2.3 million on YouTube. The data are stored in <strong>ice_tib</strong>, which contains one variable <strong>upload_day</strong> that is the number of days after Chris Kennedy’s initial challenge that each of 2,323,452 ice bucket related videos were uploaded to YouTube. For example, if the value is 21 it means that the video was uploaded 21 days after Chris Kennedy’s initial challenge."</em></p>
+<p><em>“Specifically we’ll use data from the ice bucket challenge. You can check Wikipedia for the full story, but it all started (arguably) with golfer Chris Kennedy tipping a bucket of iced water on his head to raise awareness of the disease amyotrophic lateral sclerosis (ALS, also known as Lou Gehrig’s disease). The idea is that you are challenged and have 24 hours to post a video of you having a bucket of iced water poured over your head. In this video you also challenge at least three other people. If you fail to complete the challenge your forfeit is to donate to charity (in this case ALS). Many people completed the challenge and made donations.</em></p>
+<p><em>The ice bucket challenge generated something like 2.3 million on YouTube. The data are stored in <strong>ice_tib</strong>, which contains one variable <strong>upload_day</strong> that is the number of days after Chris Kennedy’s initial challenge that each of 2,323,452 ice bucket related videos were uploaded to YouTube. For example, if the value is 21 it means that the video was uploaded 21 days after Chris Kennedy’s initial challenge.”</em></p>
 <div class="ojtask">
 <p>Work through the <strong>Summarizing data (1)</strong> &amp; <strong>Creating a summary table (2)</strong> sections of the <strong>discovr_02</strong> tutorial by pasting the below code into the <strong>Console</strong> in RStudio, pressing <strong>Enter</strong> &amp; skipping to the relevant sections.</p>
 <div class="layout-chunk" data-layout="l-body">

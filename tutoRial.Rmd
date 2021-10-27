@@ -1,0 +1,54 @@
+---
+title: "Course Overview"
+description: |
+  Coming soon!
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    theme: dans-theme.css
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(xaringanExtra)
+xaringanExtra::use_clipboard()
+library(emo)
+```
+
+### Functions we've covered so far:
+
+<details>
+  <summary>For using packages:</summary>
+
+- `install.packages()`
+- `library()`
+
+</details>
+
+<details>
+  <summary>For importing data:</summary>
+
+- `readr::read_csv()`
+- `haven::read_sav()`
+
+</details>
+
+<details>
+  <summary>For inspecting data:</summary>
+
+- `print()`
+- `View()`
+- `head()`
+- `tail()`
+- `str()`
+- `summary()`
+- `names()`
+- `ncol()`
+- `nrow()`
+
+</details>
+
+<br>
+

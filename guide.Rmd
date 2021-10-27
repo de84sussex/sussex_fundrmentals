@@ -12,6 +12,7 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(xaringanExtra)
+library(emo)
 xaringanExtra::use_clipboard()
 ```
 

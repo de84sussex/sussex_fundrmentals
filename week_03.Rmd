@@ -10,11 +10,15 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 xaringanExtra::use_clipboard()
+library(emo)
 ```
 
 ### HappyHouR 
 
-Slides [(*open in a new tab*)](./week_03/index.html){target="_blank"}
+Slides [(*open in a new tab*)](https://fundrmentals-slides.netlify.app/week_03/index.html){target="_blank"}
+
+
+<!--
 
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
@@ -22,7 +26,7 @@ Slides [(*open in a new tab*)](./week_03/index.html){target="_blank"}
     src="./week_03/index.html">
 </iframe>
 
-
+-->
 
 <!--
 

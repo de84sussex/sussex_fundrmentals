@@ -9,18 +9,21 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+xaringanExtra::use_clipboard()
 ```
 
 ### HappyHouR 
 
-Slides [(*open in a new tab*)](){target="_blank"}
+Slides [(*open in a new tab*)](https://fundrmentals-slides.netlify.app/week_11/index.html){target="_blank"}
+
+<!--
 
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
     height="360"
     src="">
 </iframe>
-
+-->
 
 ### Complete the tutorial for next week: 
 
@@ -29,5 +32,6 @@ Slides [(*open in a new tab*)](){target="_blank"}
 `r emo::ji("partying_face")` You made it!! There are no more tutorials to complete! But remember you can access all of them again to revise your skills & you can find more resources & tutorials [here...](https://fundrmentals.netlify.app/resources)
 
 :::
+
 
 <br>

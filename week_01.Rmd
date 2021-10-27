@@ -9,11 +9,14 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(emo)
 ```
 
 ### HappyHouR 
 
-Slides [(*open in a new tab*)](https://fundrmentals.netlify.app/fundrmentals_intro/#1){target="_blank"}
+Slides [(*open in a new tab*)](https://fundrmentals-slides.netlify.app/fundrmentals_intro/#1){target="_blank"}
+
+<!--
 
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
@@ -21,7 +24,7 @@ Slides [(*open in a new tab*)](https://fundrmentals.netlify.app/fundrmentals_int
     src="https://fundrmentals.netlify.app/fundrmentals_intro/#1">
 </iframe>
 
-
+-->
 
 ### Downloading R & RStudio
 

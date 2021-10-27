@@ -7,13 +7,13 @@ output:
     toc: true
     toc_float: true
     theme: dans-theme.css
-
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(xaringanExtra)
 xaringanExtra::use_clipboard()
+library(emo)
 ```
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Week 04: Data Wrangling"
+title: "Week 04: 'Reading Week'"
 output:
   distill::distill_article:
     toc: true
@@ -11,16 +11,6 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 xaringanExtra::use_clipboard()
 ```
-
-### HappyHouR 
-
-Slides [(*open in a new tab*)](){target="_blank"}
-
-<iframe id="inlineFrameExample"
-    title="Inline Frame Example"
-    height="360"
-    src="">
-</iframe>
 
 
 ### Complete the tutorial for next week: 
@@ -36,5 +26,7 @@ learnr::run_tutorial("discovr_05", package = "discovr")
 ```
 
 :::
+
+*This tutorial is pretty long, and generally visualising data isn't something we learn by heart (or need to), but you should aim to try go through the ggplot2 section as a minimum, then ideally complete the boxplots, plotting means, and scatterplots sections (you can ignore the faceting tasks if you want to). There's also an empty code chunk for you to have a go at creating a plot from the emp_data in the worksheet for week 04.*
 
 <br>

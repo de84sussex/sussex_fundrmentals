@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,13 +77,14 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>FundRmentals</title>
@@ -1604,7 +1605,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2533,7 +2537,7 @@ ExtRas
 <h3>Contents</h3>
 <ul>
 <li><a href="#click-to-join-a-session">Click to join a session!</a></li>
-<li><a href="#complete-the-tutorial-for-week-3">Complete the tutorial for week 3:</a></li>
+<li><a href="#complete-the-tutorial-for-week-5">Complete the tutorial for week 5:</a></li>
 <li><a href="#share-your-thoughts">Share your thoughts!</a></li>
 </ul>
 </nav>
@@ -2543,9 +2547,9 @@ ExtRas
 <p><a href="https://universityofsussex.zoom.us/j/91325406386" target=”_blank”> <button class="button1">Wed 1 - 2pm</button> </a> <a href="https://universityofsussex.zoom.us/j/93345799778" target=”_blank”> <button class="button2">Wed 3.30 - 4.30pm</button> </a></p>
 </div>
 <p><br></p>
-<h3 id="complete-the-tutorial-for-week-3">Complete the tutorial for week 3:</h3>
+<h3 id="complete-the-tutorial-for-week-5">Complete the tutorial for week 5:</h3>
 <div class="ojtask">
-<p><font size="+1">Access the week 3 tutorial information <a href="https://fundrmentals.netlify.app/week_03.html#complete-the-tutorial-for-next-week">here..</a></font></p>
+<p><font size="+1">Access the week 5 tutorial information <a href="https://fundrmentals.netlify.app/week_05.html#complete-the-tutorial-for-next-week">here..</a></font></p>
 </div>
 <p><br></p>
 <h3 id="share-your-thoughts">Share your thoughts!</h3>

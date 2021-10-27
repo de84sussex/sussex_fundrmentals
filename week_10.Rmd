@@ -14,14 +14,16 @@ xaringanExtra::use_clipboard()
 
 ### HappyHouR 
 
-Slides [(*open in a new tab*)](){target="_blank"}
+Slides [(*open in a new tab*)](https://fundrmentals-slides.netlify.app/week_10/index.html){target="_blank"}
+
+<!--
 
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
     height="360"
     src="">
 </iframe>
-
+-->
 
 ### Complete the tutorial for next week: 
 
@@ -48,3 +50,7 @@ learnr::run_tutorial("discovr_20", package = "discovr")
 ```
 
 :::
+
+
+
+<br>

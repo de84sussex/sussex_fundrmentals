@@ -1,5 +1,5 @@
 ---
-title: "Week 05: Data Viz"
+title: "Week 05: Data Wrangling"
 output:
   distill::distill_article:
     toc: true
@@ -14,20 +14,26 @@ xaringanExtra::use_clipboard()
 
 ### HappyHouR 
 
-Slides [(*open in a new tab*)](){target="_blank"}
+Slides [(*open in a new tab*)](https://fundrmentals-slides.netlify.app/week_05/index.html){target="_blank"}
+
+<!--
 
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
     height="360"
-    src="">
+    src="./week_04/index.html">
 </iframe>
 
+-->
 
-### Complete the tutorial for next week: 
+Download the [worksheet here](./docs/week_04.Rmd)
+
+
+### Complete the tutorials for next week: 
 
 :::ojtask
 
-Work through the discovr_07 & the discovr_09 tutorials by pasting the below code into the **Console** in RStudio & pressing **Enter**.
+Work through the discovr_07 (associations) & the discovr_09 (comparing means) tutorials by pasting the below code into the **Console** in RStudio & pressing **Enter**.
 
 ```{r, eval = F, echo = T}
 

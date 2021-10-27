@@ -12,6 +12,7 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 xaringanExtra::use_clipboard()
+library(emo)
 ```
 
 
@@ -30,12 +31,12 @@ xaringanExtra::use_clipboard()
 
 <br>
 
-### Complete the tutorial for week 3:
+### Complete the tutorial for week 5:
 
 
 :::ojtask
 
-<font size="+1">Access the week 3 tutorial information [here..](https://fundrmentals.netlify.app/week_03.html#complete-the-tutorial-for-next-week)</font>
+<font size="+1">Access the week 5 tutorial information [here..](https://fundrmentals.netlify.app/week_05.html#complete-the-tutorial-for-next-week)</font>
 
 :::
 

@@ -1,0 +1,162 @@
+---
+title: "Week 04: wrangling & summarising data"
+date: "20/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setup
+
+```{r}
+# loading packages
+library("tidyverse")
+```
+
+```{r}
+# loading in data
+emp_data <- readr::read_csv("https://raw.githubusercontent.com/de84sussex/sussex_fundrmentals/master/docs/emp_data.csv") 
+```
+
+
+## Data Wrangling
+
+Some common functions we'll use for manipulating data are: 
+
+- dplyr::select() for selecting variables
+
+- dplyr::filter() for filtering variables on a set of conditions
+
+- dplyr::mutate() for altering variables in some way
+
+- dplyr::rename() for renaming variables
+
+Remember that the `dplyr::` part just means that the function is from the `dplyr` package. 
+
+
+### Assignment <-
+
+The assignment operator <- allows us to create a new object that contains whatever is to the right side of the arrow. Whenever we edit our object, we have the choice of overwriting the existing object by using the same object name or to create a new object by giving it a new name. 
+
+This command would overwrite the original object with the changes:
+
+    data <- data + some changes
+
+But this would create a new object without overwriting the original object:
+
+    data_2 <- data + some changes
+
+For the first few examples below I want us to create a new object called emp_data_2
+
+
+### dplyr::select()
+
+```{r}
+
+emp_data_2 <- 
+
+```
+
+
+### dplyr::filter()
+
+```{r}
+
+emp_data_2 <- 
+
+```
+
+
+### dplyr::mutate()
+
+```{r}
+
+emp_data_2 <- 
+
+```
+
+
+### dplyr::rename()
+
+```{r}
+
+emp_data_2 <- 
+
+```
+
+
+
+## The Pipe %>% 
+
+The pipe %>% comes from the `magrittr` package which is part of `tidyverse`. 
+
+The pipe %>% allows us to chain multiple commands together - like a pipeline!
+
+To be able to use the pipe %>% we have to load `tidyverse` or `magrittr` using `library()` in a code chunk otherwise we'll see this error appear:
+
+`could not find function "%>%"`
+
+Once loaded, we can then use the keyboard shortcut of Ctrl + Shift + M *OR* Command + Shift + M to insert a pipe %>% 
+
+The pipe %>% allows us to avoid using nested functions, and instead we can write each step of a given process in a more logical order. 
+
+As an example, when using nested functions, my morning routine looks a bit like this:
+
+```{r, eval = FALSE}
+
+am_routine <- leave_house(get_dressed(get_ready(wake_up(person = me, time = "too_early"), existential_crisis = TRUE, breakfast = FALSE, coffee_cups = 50), clothing = "pyjamas", footwear = "fluffy_slippers"), university = FALSE, zoomiversity = TRUE)
+
+```
+
+But we can use the pipe %>% to make it seem more logical, and consequentially easier to read & write:
+
+```{r, eval = FALSE}
+
+am_routine <- me %>%
+    wake_up(person = ., time = "too_early") %>% 
+    get_ready(person = ., existential_crisis = TRUE, breakfast = FALSE, coffee_cups = 50) %>% 
+    get_dressed(person = ., clothing = "pyjamas", footwear = "fluffy_slippers") %>% 
+    leave_house(person = ., university = FALSE, zoomiversity = TRUE)
+
+```
+
+So the *selecting*, *filtering*, *mutating*, and *renaming* we did with the emp_data above, we can actually do this in one step which we're going to try out now! 
+
+I've done the first two steps for you, try filling in the rest so that you:
+
+1. filter your data so that all participants are aged 30 and above
+2. create a new variable called Attractiveness by multiplying the scores in the Q15620 column by 100
+3. rename the Q14097 column to be called Empathy
+
+```{r}
+
+emp_data_3 <- emp_data %>% 
+  dplyr::select(.data = ., -Experience) %>% 
+
+  
+  
+
+```
+
+
+# Week 05 Prep
+
+## Visualising Data
+
+```{r}
+# Using the emp_data, and the discovr_05 tutorial, create a plot of your choice here!
+
+
+
+
+
+```
+
+
+
+
+
+
+
