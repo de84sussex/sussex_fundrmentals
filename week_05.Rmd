@@ -29,24 +29,41 @@ Slides [(*open in a new tab*)](https://fundrmentals-slides.netlify.app/week_05/i
 Download the [worksheet here](./docs/week_04.Rmd)
 
 
-### Complete the tutorials for next week: 
+### Complete the tutorial for next week if you haven't already: 
 
 :::ojtask
 
-Work through the discovr_07 (associations) & the discovr_09 (comparing means) tutorials by pasting the below code into the **Console** in RStudio & pressing **Enter**.
+Work through the discovr_05 tutorial by pasting the below code into the **Console** in RStudio & pressing **Enter**.
 
 ```{r, eval = F, echo = T}
 
-learnr::run_tutorial("discovr_07", package = "discovr")
-
-```
-
-```{r, eval = F, echo = T}
-
-learnr::run_tutorial("discovr_09", package = "discovr")
+learnr::run_tutorial("discovr_05", package = "discovr")
 
 ```
 
 :::
 
+*This tutorial is pretty long, and generally visualising data isn't something we learn by heart (or need to), but you should aim to try go through the ggplot2 section as a minimum, then ideally complete the boxplots, plotting means, and scatterplots sections (you can ignore the faceting tasks if you want to). There's also an empty code chunk for you to have a go at creating a plot from the emp_data in the worksheet for week 04.*
+
 <br>
+
+
+<!-- :::ojtask -->
+
+<!-- Work through the discovr_07 (associations) & the discovr_09 (comparing means) tutorials by pasting the below code into the **Console** in RStudio & pressing **Enter**. -->
+
+<!-- ```{r, eval = F, echo = T} -->
+
+<!-- learnr::run_tutorial("discovr_07", package = "discovr") -->
+
+<!-- ``` -->
+
+<!-- ```{r, eval = F, echo = T} -->
+
+<!-- learnr::run_tutorial("discovr_09", package = "discovr") -->
+
+<!-- ``` -->
+
+<!-- ::: -->
+
+<!-- <br> -->

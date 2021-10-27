@@ -36,6 +36,8 @@ navbar:
       menu:
       - text: "R Resources"
         href: ./resouRces.html
+      - text: "Useful Functions"
+        href: ./tutoRial.html
 #      - text: "Error Search"
 #        href: ./erroRs.html
       - text: "R Help Desk"
