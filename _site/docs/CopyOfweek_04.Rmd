@@ -55,7 +55,7 @@ For the first few examples below I want us to create a new object called emp_dat
 
 ```{r}
 
-emp_data_2 <- 
+emp_data_2 <- dplyr::select(.data = emp_data, -Experience, -ID)
 
 ```
 
@@ -64,7 +64,7 @@ emp_data_2 <-
 
 ```{r}
 
-emp_data_2 <- 
+emp_data_2 <- dplyr::filter(.data = emp_data_2, Age > 29)
 
 ```
 
@@ -73,7 +73,7 @@ emp_data_2 <-
 
 ```{r}
 
-emp_data_2 <- 
+emp_data_2 <- dplyr::mutate(.data = emp_data_2, Attractiveness = Q15620 * 100)
 
 ```
 
@@ -82,7 +82,7 @@ emp_data_2 <-
 
 ```{r}
 
-emp_data_2 <- 
+emp_data_2 <- dplyr::rename(.data = emp_data_2, Empathy = Q14097)
 
 ```
 
@@ -134,6 +134,9 @@ I've done the first two steps for you, try filling in the rest so that you:
 
 emp_data_3 <- emp_data %>% 
   dplyr::select(.data = ., -Experience) %>% 
+  dplyr::filter(.data = ., Age > 29) %>% 
+  dplyr::mutate(.data = ., Attractiveness = Q15620 *100) %>% 
+  dplyr::rename(.data = ., Empathy = Q14097)
 
 ```
 

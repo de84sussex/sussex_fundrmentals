@@ -1,5 +1,5 @@
 ---
-title: "Week 06: Correlations & t-tests"
+title: "Week 06: Summarising & the %>%"
 output:
   distill::distill_article:
     toc: true
@@ -26,18 +26,21 @@ Slides [(*open in a new tab*)](https://fundrmentals-slides.netlify.app/week_06/i
 
 -->
 
+Download the [worksheet here](./docs/week_04.Rmd)
+
 ### Complete the tutorial for next week: 
 
 :::ojtask
 
-Work through the discovr_08 tutorial by pasting the below code into the **Console** in RStudio & pressing **Enter**.
+Work through the discovr_07 tutorial on associations by pasting the below code into the **Console** in RStudio & pressing **Enter**.
 
 ```{r, eval = F, echo = T}
 
-learnr::run_tutorial("discovr_08", package = "discovr")
+learnr::run_tutorial("discovr_07", package = "discovr")
 
 ```
 
 :::
 
 <br>
+
