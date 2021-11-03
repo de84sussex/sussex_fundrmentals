@@ -1,7 +1,7 @@
 ---
 title: "Week 04: wrangling & summarising data"
 date: "20/10/2021"
-output: word_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -20,25 +20,23 @@ library("tidyverse")
 emp_data <- readr::read_csv("https://raw.githubusercontent.com/de84sussex/sussex_fundrmentals/master/docs/emp_data.csv") 
 ```
 
-
 ## Data Wrangling
 
-Some common functions we'll use for manipulating data are: 
+Some common functions we'll use for manipulating data are:
 
-- dplyr::select() for selecting variables
+-   dplyr::select() for selecting variables
 
-- dplyr::filter() for filtering variables on a set of conditions
+-   dplyr::filter() for filtering variables on a set of conditions
 
-- dplyr::mutate() for altering variables in some way
+-   dplyr::mutate() for altering variables in some way
 
-- dplyr::rename() for renaming variables
+-   dplyr::rename() for renaming variables
 
-Remember that the `dplyr::` part just means that the function is from the `dplyr` package. 
+Remember that the `dplyr::` part just means that the function is from the `dplyr` package.
 
+### Assignment \<-
 
-### Assignment <-
-
-The assignment operator <- allows us to create a new object that contains whatever is to the right side of the arrow. Whenever we edit our object, we have the choice of overwriting the existing object by using the same object name or to create a new object by giving it a new name. 
+The assignment operator \<- allows us to create a new object that contains whatever is to the right side of the arrow. Whenever we edit our object, we have the choice of overwriting the existing object by using the same object name or to create a new object by giving it a new name.
 
 This command would overwrite the original object with the changes:
 
@@ -48,8 +46,7 @@ But this would create a new object without overwriting the original object:
 
     data_2 <- data + some changes
 
-For the first few examples below I want us to create a new object called emp_data_2
-
+For the first few ***examples*** *below* I [want]{.ul} us to **create** a new object called emp_data_2
 
 ### dplyr::select()
 
@@ -59,7 +56,6 @@ emp_data_2 <- dplyr::select(.data = emp_data, -Experience)
 
 ```
 
-
 ### dplyr::filter()
 
 ```{r}
@@ -67,7 +63,6 @@ emp_data_2 <- dplyr::select(.data = emp_data, -Experience)
 emp_data_2 <- dplyr::filter(.data = emp_data_2, Age > 29)
 
 ```
-
 
 ### dplyr::mutate()
 
@@ -77,7 +72,6 @@ emp_data_2 <- dplyr::mutate(.data = emp_data_2, Attractiveness = Q15620 * 100)
 
 ```
 
-
 ### dplyr::rename()
 
 ```{r}
@@ -86,11 +80,9 @@ emp_data_2 <- dplyr::rename(.data = emp_data_2, Empathy = Q14097)
 
 ```
 
+## The Pipe %>%
 
-
-## The Pipe %>% 
-
-The pipe %>% comes from the `magrittr` package which is part of `tidyverse`. 
+The pipe %>% comes from the `magrittr` package which is part of `tidyverse`.
 
 The pipe %>% allows us to chain multiple commands together - like a pipeline!
 
@@ -98,9 +90,9 @@ To be able to use the pipe %>% we have to load `tidyverse` or `magrittr` using `
 
 `could not find function "%>%"`
 
-Once loaded, we can then use the keyboard shortcut of Ctrl + Shift + M *OR* Command + Shift + M to insert a pipe %>% 
+Once loaded, we can then use the keyboard shortcut of Ctrl + Shift + M *OR* Command + Shift + M to insert a pipe %>%
 
-The pipe %>% allows us to avoid using nested functions, and instead we can write each step of a given process in a more logical order. 
+The pipe %>% allows us to avoid using nested functions, and instead we can write each step of a given process in a more logical order.
 
 As an example, when using nested functions, my morning routine looks a bit like this:
 
@@ -122,25 +114,25 @@ am_routine <- me %>%
 
 ```
 
-So the *selecting*, *filtering*, *mutating*, and *renaming* we did with the emp_data above, we can actually do this in one step which we're going to try out now! 
+So the *selecting*, *filtering*, *mutating*, and *renaming* we did with the emp_data above, we can actually do this in one step which we're going to try out now!
 
 I've done the first two steps for you, try filling in the rest so that you:
 
-1. filter your data so that all participants are aged 30 and above
-2. create a new variable called Attractiveness by multiplying the scores in the Q15620 column by 100
-3. rename the Q14097 column to be called Empathy
+1.  filter your data so that all participants are aged 30 and above
+2.  create a new variable called Attractiveness by multiplying the scores in the Q15620 column by 100
+3.  rename the Q14097 column to be called Empathy
 
 ```{r}
 
 emp_data_3 <- emp_data %>% 
   dplyr::select(.data = ., -Experience) %>% 
   dplyr::filter(.data = ., Age > 29) %>% 
-  dplyr::mutate(.data = ., Attractiveness = Q15620 *100) %>% 
+  dplyr::mutate(.data = ., Attractiveness = Q15620 * 100) %>% 
   dplyr::rename(.data = ., Empathy = Q14097)
 
+emp_data_3
 
 ```
-
 
 # Week 05 Prep
 
@@ -154,7 +146,6 @@ emp_data_3 <- emp_data %>%
 
 
 ```
-
 
 ```{r}
 
@@ -196,18 +187,3 @@ emp_summary <- emp_data_3 %>%
 emp_summary
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

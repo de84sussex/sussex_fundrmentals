@@ -31,12 +31,12 @@ library(emo)
 
 <br>
 
-### Complete the tutorial for week 5:
+### Complete the tutorial for week 6:
 
 
 :::ojtask
 
-<font size="+1">Access the week 5 tutorial information [here..](https://fundrmentals.netlify.app/week_05.html#complete-the-tutorial-for-next-week)</font>
+<font size="+1">Access the week 6 tutorial information [here..](https://fundrmentals.netlify.app/week_06.html#complete-the-tutorial-for-next-week)</font>
 
 :::
 

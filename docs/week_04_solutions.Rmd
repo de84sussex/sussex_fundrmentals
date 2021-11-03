@@ -134,9 +134,56 @@ I've done the first two steps for you, try filling in the rest so that you:
 
 emp_data_3 <- emp_data %>% 
   dplyr::select(.data = ., -Experience) %>% 
+  dplyr::filter(.data = ., Age > 29) %>% 
+  dplyr::mutate(.data = ., Attractiveness = Q15620 * 100) %>% 
+  dplyr::rename(.data = ., Empathy = Q14097)
+
+emp_data_3
 
 ```
 
+## summarise() & group_by()
+
+```{r}
+
+emp_summary <- emp_data_3 %>% 
+  dplyr::summarise(
+    mean_age = mean(Age),
+    min_age = min(Age),
+    max_age = max(Age)
+  )
+
+emp_summary
+
+```
+
+```{r}
+
+emp_summary <- emp_data_3 %>% 
+  dplyr::group_by(Harm) %>% 
+  dplyr::summarise(
+    mean_age = mean(Age),
+    min_age = min(Age),
+    max_age = max(Age)
+  )
+
+emp_summary
+
+```
+
+```{r}
+
+emp_summary <- emp_data_3 %>% 
+  dplyr::group_by(Harm, Humanness) %>% 
+  dplyr::summarise(
+    mean_age = mean(Age),
+    min_age = min(Age),
+    max_age = max(Age)
+  )
+
+emp_summary
+
+```
 
 
 
