@@ -1,5 +1,5 @@
 ---
-title: "Week 07"
+title: "Week 07: Data Viz"
 output:
   distill::distill_article:
     toc: true
@@ -29,19 +29,15 @@ Slides [(*open in a new tab*)](https://fundrmentals-slides.netlify.app/week_07/i
 
 :::ojtask
 
-Work through the discovr_11 & the discovr_12 tutorials by pasting the below code into the **Console** in RStudio & pressing **Enter**.
+Work through the discovr_09 tutorial on comparing means by pasting the below code into the **Console** in RStudio & pressing **Enter**.
 
 ```{r, eval = F, echo = T}
 
-learnr::run_tutorial("discovr_11", package = "discovr")
+learnr::run_tutorial("discovr_09", package = "discovr")
 
 ```
 
-```{r, eval = F, echo = T}
 
-learnr::run_tutorial("discovr_12", package = "discovr")
-
-```
 
 :::
 

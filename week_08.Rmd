@@ -1,5 +1,5 @@
 ---
-title: "Week 08"
+title: "Week 08: Correlations & t-tests"
 output:
   distill::distill_article:
     toc: true
@@ -29,13 +29,16 @@ Slides [(*open in a new tab*)](https://fundrmentals-slides.netlify.app/week_08/i
 
 :::ojtask
 
-Work through the discovr_13 tutorial by pasting the below code into the **Console** in RStudio & pressing **Enter**.
+
+Work through the discovr_08 tutorial by pasting the below code into the **Console** in RStudio & pressing **Enter**.
 
 ```{r, eval = F, echo = T}
 
-learnr::run_tutorial("discovr_13", package = "discovr")
+learnr::run_tutorial("discovr_08", package = "discovr")
 
 ```
+
+
 
 :::
 

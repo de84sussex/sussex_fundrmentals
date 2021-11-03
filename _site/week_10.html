@@ -87,27 +87,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>FundRmentals: Week 10</title>
+  <title>FundRmentals: Week 10: ANOVA</title>
 
 
   <link rel="icon" type="image/png" href="img/Lightbulb.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="FundRmentals: Week 10"/>
+  <meta property="og:title" content="FundRmentals: Week 10: ANOVA"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="FundRmentals"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="FundRmentals: Week 10"/>
+  <meta property="twitter:title" content="FundRmentals: Week 10: ANOVA"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Week 10"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","theme"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["dans-theme.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Week 10: ANOVA"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","theme"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["dans-theme.css"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2465,7 +2465,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Week 10","authors":[]}
+{"title":"Week 10: ANOVA","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2507,7 +2507,7 @@ ExtRas
 </button>
 <div class="nav-dropdown-content">
 <a href="./resouRces.html">R Resources</a>
-<a href="./tutoRial.html">Useful Functions</a>
+<a href="./functions.html">Useful Functions</a>
 <a href="./HD.html">R Help Desk</a>
 <a href="./rmd_tutorial.html">Writing Rticles</a>
 <a href="./disso_rmarkdown_tutorial.html">Writing a DisseRtation</a>
@@ -2522,7 +2522,7 @@ ExtRas
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Week 10</h1>
+<h1>Week 10: ANOVA</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2535,7 +2535,7 @@ ExtRas
 <h3>Contents</h3>
 <ul>
 <li><a href="#happyhour">HappyHouR</a></li>
-<li><a href="#complete-the-tutorial-for-next-week">Complete the tutorial for next week:</a></li>
+<li><a href="#complete-the-tutorial-for-next-week-based-on-the-test-you-use-most-often">Complete the tutorial for next week based on the test you use most often:</a></li>
 </ul>
 </nav>
 </div>
@@ -2549,9 +2549,27 @@ ExtRas
     src="">
 </iframe>
 -->
-<h3 id="complete-the-tutorial-for-next-week">Complete the tutorial for next week:</h3>
+<h3 id="complete-the-tutorial-for-next-week-based-on-the-test-you-use-most-often">Complete the tutorial for next week based on the test you use most often:</h3>
 <div class="ojtask">
-<p>Work through either the discovr_14 (repeated measures), discovr_15 (mixed designs), or discovr_20 (categorical outcomes/logistic regression) tutorial (or all 3…) by pasting the below code into the <strong>Console</strong> in RStudio &amp; pressing <strong>Enter</strong>.</p>
+<p>Work through either the discovr_10 (moderation &amp; mediation), discovr_12 (ANCOVA), discovr_13 (factorial designs), discovr_14 (repeated measures designs), discovr_15 (mixed designs), discovr_17 (exploratory factor analysis), or discovr_20 (logistic regression) tutorial by pasting the below code into the <strong>Console</strong> in RStudio &amp; pressing <strong>Enter</strong>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>learnr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/learnr/man/run_tutorial.html'>run_tutorial</a></span><span class='op'>(</span><span class='st'>"discovr_10"</span>, package <span class='op'>=</span> <span class='st'>"discovr"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>learnr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/learnr/man/run_tutorial.html'>run_tutorial</a></span><span class='op'>(</span><span class='st'>"discovr_12"</span>, package <span class='op'>=</span> <span class='st'>"discovr"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>learnr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/learnr/man/run_tutorial.html'>run_tutorial</a></span><span class='op'>(</span><span class='st'>"discovr_13"</span>, package <span class='op'>=</span> <span class='st'>"discovr"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>learnr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/learnr/man/run_tutorial.html'>run_tutorial</a></span><span class='op'>(</span><span class='st'>"discovr_14"</span>, package <span class='op'>=</span> <span class='st'>"discovr"</span><span class='op'>)</span>
@@ -2561,6 +2579,12 @@ ExtRas
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>learnr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/learnr/man/run_tutorial.html'>run_tutorial</a></span><span class='op'>(</span><span class='st'>"discovr_15"</span>, package <span class='op'>=</span> <span class='st'>"discovr"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>learnr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/learnr/man/run_tutorial.html'>run_tutorial</a></span><span class='op'>(</span><span class='st'>"discovr_17"</span>, package <span class='op'>=</span> <span class='st'>"discovr"</span><span class='op'>)</span>
 </code></pre>
 </div>
 </div>

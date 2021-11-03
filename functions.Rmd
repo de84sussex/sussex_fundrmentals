@@ -50,5 +50,29 @@ library(emo)
 
 </details>
 
+<details>
+  <summary>For wrangling data:</summary>
+
+- `dplyr::select()`
+- `dplyr::filter()`
+- `dplyr::mutate()`
+- `dplyr::rename()`
+
+</details>
+
+
+<details>
+  <summary>For summarising data:</summary>
+
+- `dplyr::summarise()`
+- `dplyr::group_by()`
+
+</details>
+
+
+
+
+
+
 <br>
 

@@ -1,5 +1,5 @@
 ---
-title: "Week 10"
+title: "Week 10: ANOVA"
 output:
   distill::distill_article:
     toc: true
@@ -25,32 +25,40 @@ Slides [(*open in a new tab*)](https://fundrmentals-slides.netlify.app/week_10/i
 </iframe>
 -->
 
-### Complete the tutorial for next week: 
+### Complete the tutorial for next week based on the test you use most often: 
 
 :::ojtask
 
-Work through either the discovr_14 (repeated measures), discovr_15 (mixed designs), or discovr_20 (categorical outcomes/logistic regression) tutorial (or all 3...) by pasting the below code into the **Console** in RStudio & pressing **Enter**.
+Work through either the discovr_10 (moderation & mediation), discovr_12 (ANCOVA), discovr_13 (factorial designs), discovr_14 (repeated measures designs), discovr_15 (mixed designs), discovr_17 (exploratory factor analysis), or discovr_20 (logistic regression) tutorial by pasting the below code into the **Console** in RStudio & pressing **Enter**.
 
 ```{r, eval = F, echo = T}
+learnr::run_tutorial("discovr_10", package = "discovr")
+```
 
+```{r, eval = F, echo = T}
+learnr::run_tutorial("discovr_12", package = "discovr")
+```
+
+```{r, eval = F, echo = T}
+learnr::run_tutorial("discovr_13", package = "discovr")
+```
+
+```{r, eval = F, echo = T}
 learnr::run_tutorial("discovr_14", package = "discovr")
-
 ```
 
 ```{r, eval = F, echo = T}
-
 learnr::run_tutorial("discovr_15", package = "discovr")
-
 ```
 
 ```{r, eval = F, echo = T}
+learnr::run_tutorial("discovr_17", package = "discovr")
+```
 
+```{r, eval = F, echo = T}
 learnr::run_tutorial("discovr_20", package = "discovr")
-
 ```
 
 :::
-
-
 
 <br>

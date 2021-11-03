@@ -1,5 +1,5 @@
 ---
-title: "Week 09"
+title: "Week 09: GLM"
 output:
   distill::distill_article:
     toc: true
@@ -29,13 +29,14 @@ Slides [(*open in a new tab*)](){target="_blank"}
 
 :::ojtask
 
-Work through the discovr_17 tutorial by pasting the below code into the **Console** in RStudio & pressing **Enter**.
+Work through the discovr_11 tutorial by pasting the below code into the **Console** in RStudio & pressing **Enter**.
 
 ```{r, eval = F, echo = T}
 
-learnr::run_tutorial("discovr_17", package = "discovr")
+learnr::run_tutorial("discovr_11", package = "discovr")
 
 ```
+
 
 :::
 

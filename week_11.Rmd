@@ -1,5 +1,5 @@
 ---
-title: "Week 11"
+title: "Week 11: Pick a Test!"
 output:
   distill::distill_article:
     toc: true
@@ -29,7 +29,7 @@ Slides [(*open in a new tab*)](https://fundrmentals-slides.netlify.app/week_11/i
 
 :::ojtask
 
-`r emo::ji("partying_face")` You made it!! There are no more tutorials to complete! But remember you can access all of them again to revise your skills & you can find more resources & tutorials [here...](https://fundrmentals.netlify.app/resources)
+`r emo::ji("partying_face")` You made it!! There are no more sessions to complete! But remember you can access all of them again to revise your skills & you can find more resources & tutorials [here...](https://fundrmentals.netlify.app/resources)
 
 :::
 
