@@ -1,7 +1,7 @@
 ---
 title: "Week 04: wrangling & summarising data"
 date: "20/10/2021"
-output: html_document
+output: word_document
 ---
 
 ```{r setup, include=FALSE}
@@ -55,7 +55,7 @@ For the first few examples below I want us to create a new object called emp_dat
 
 ```{r}
 
-emp_data_2 <- dplyr::select(.data = emp_data, -Experience, -ID)
+emp_data_2 <- dplyr::select(.data = emp_data, -Experience)
 
 ```
 
@@ -138,6 +138,7 @@ emp_data_3 <- emp_data %>%
   dplyr::mutate(.data = ., Attractiveness = Q15620 *100) %>% 
   dplyr::rename(.data = ., Empathy = Q14097)
 
+
 ```
 
 
@@ -153,6 +154,56 @@ emp_data_3 <- emp_data %>%
 
 
 ```
+
+
+```{r}
+
+emp_summary <- emp_data_3 %>% 
+  dplyr::summarise(
+    mean_age = mean(Age),
+    min_age = min(Age),
+    max_age = max(Age)
+  )
+
+emp_summary
+
+```
+
+```{r}
+
+emp_summary <- emp_data_3 %>% 
+  dplyr::group_by(Harm) %>% 
+  dplyr::summarise(
+    mean_age = mean(Age),
+    min_age = min(Age),
+    max_age = max(Age)
+  )
+
+emp_summary
+
+```
+
+```{r}
+
+emp_summary <- emp_data_3 %>% 
+  dplyr::group_by(Harm, Humanness) %>% 
+  dplyr::summarise(
+    mean_age = mean(Age),
+    min_age = min(Age),
+    max_age = max(Age)
+  )
+
+emp_summary
+
+```
+
+
+
+
+
+
+
+
 
 
 
