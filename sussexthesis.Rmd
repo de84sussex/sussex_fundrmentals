@@ -1,0 +1,61 @@
+---
+title: "R Thesis Template"
+description: |
+  Write your thesis in R!
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(xaringanExtra)
+xaringanExtra::use_clipboard()
+```
+
+:::float-image
+
+<a href="https://github.com/de84sussex/sussexthesis">
+<img src="./img/sussexthesis_hex.png" style="width:20%;height:20%;float:right; padding:10px">
+</a>
+
+
+
+### sussexthesis package
+
+The [`sussexthesis`](https://github.com/de84sussex/sussexthesis) package is based on Chester Ismay’s [`thesisdown`](https://github.com/ismayc/thesisdown) package. The package includes a thesis template that is designed to be compatible with the submission requirements of the University of Sussex, with some additional APA formatting. The package is under active development and currently only works when knitting to pdf.  
+
+:::
+
+
+#### Using sussexthesis
+
+Follow the [`thesisdown`](https://github.com/ismayc/thesisdown) setup guide before installing [`sussexthesis`](https://github.com/de84sussex/sussexthesis) package as detailed below:
+
+```{r sus, eval=F, echo=TRUE}
+# Install devtools
+install.packages("devtools")
+library(devtools)
+
+# Install sussexthesis
+devtools::install_github("de84sussex/sussexthesis")
+library(sussexthesis)
+
+```
+
+#### Tips & Tricks
+
+- A user guide is given in the index.Rmd file & describes how to use the template  
+
+- Some additional tips for correctly using headings are given in the 01-chap1.Rmd file  
+
+- The formatting is applied automatically, but you can hack it by using LaTeX & Markdown in the file you wish to edit  
+
+- The package is somewhat experimental, if you run into any problems <a href="mailto:danielle.evans@sussex.ac.uk">please let me know! </a>  
+
+
+
+<br>
+
+

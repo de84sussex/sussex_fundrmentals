@@ -42,10 +42,15 @@ navbar:
 #        href: ./erroRs.html
       - text: "R Help Desk"
         href: ./HD.html
-      - text: "Writing Rticles"
+      - text: "Writing aRticles"
         href: ./rmd_tutorial.html
       - text: "Writing a DisseRtation"
         href: ./disso_rmarkdown_tutorial.html
+      - text: "sussexthesis Template"
+        href: ./sussexthesis.html
+      - text: "Using Inline Code"
+        href: ./inline_code.html
+
         
   search: false
 output: distill::distill_article

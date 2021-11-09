@@ -110,7 +110,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Using Inline Code"]},{"type":"character","attributes":{},"value":["Learn how to use inline code with this tutorial! \n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","theme"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["dans-theme.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Using Inline Code"]},{"type":"character","attributes":{},"value":["Learn how to use inline code with this tutorial!  \n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","theme"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["dans-theme.css"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2508,8 +2508,10 @@ ExtRas
 <a href="./resouRces.html">R Resources</a>
 <a href="./functions.html">Useful Functions</a>
 <a href="./HD.html">R Help Desk</a>
-<a href="./rmd_tutorial.html">Writing Rticles</a>
+<a href="./rmd_tutorial.html">Writing aRticles</a>
 <a href="./disso_rmarkdown_tutorial.html">Writing a DisseRtation</a>
+<a href="./sussexthesis.html">sussexthesis Template</a>
+<a href="./inline_code.html">Using Inline Code</a>
 </div>
 </div>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
@@ -2533,26 +2535,55 @@ ExtRas
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#inline-code">Inline Code</a></li>
-<li><a href="#how-to-use-inline-code">How to use inline code</a></li>
+<li><a href="#coming-soon">Coming Soon!</a></li>
 </ul>
 </nav>
 </div>
-<h3 id="inline-code">Inline Code</h3>
-<p>The output of code can be included within the body of an RMarkdown document (i.e., ‘inline’) to increase accuracy and efficiency when reporting values. Inline code is used by enclosing any objects or functions inside a set of back ticks like this:</p>
-<p>.center[]</p>
-<p>By using inline code, we can avoid any typos when reporting results and it also means that if our data, statistical tests, or tables change in any way, the RMarkdown file will be updated with the new values automatically whenever you knit the document. The output of the inline code will be entirely indistinguishable from the surrounding text in the document, as though you had written it by hand yourself.</p>
-<h3 id="how-to-use-inline-code">How to use inline code</h3>
-<p>We can use inline code to pull out information from a range of sources including Sample size, tables, etc., test results, objects…</p>
-<p>how to use it with sample size, test results, tables</p>
-<p><code>`r nrow(data)`</code></p>
-<p>You must include the <code>r</code> inside the back ticks for the code to be evaluated - this is something easily forgotten.</p>
-<h4 id="how-to-access-objects-columns-cells-variables-etc">How to access objects, columns, cells, variables etc</h4>
-<p>str &amp; environment</p>
-<h4 id="how-to-check-if-it-has-worked">How to check if it has worked</h4>
-<h4 id="formatting-tips">Formatting tips</h4>
-<p>p values</p>
-<p>decimals/digits</p>
+<h3 id="coming-soon">Coming Soon!</h3>
+<!--
+
+### Inline Code
+
+The output of code can be included within the body of an RMarkdown document (i.e., 'inline') to increase accuracy and efficiency when reporting values. Inline code is used by enclosing any objects or functions inside a set of back ticks like this:
+
+.center[
+
+`` `r function_goes_here()` ``
+
+]
+
+By using inline code, we can avoid any typos when reporting results and it also means that if our data, statistical tests, or tables change in any way, the RMarkdown file will be updated with the new values automatically whenever you knit the document. The output of the inline code will be entirely indistinguishable from the surrounding text in the document, as though you had written it by hand yourself. 
+
+
+### How to use inline code
+
+We can use inline code to pull out information from a range of sources including  Sample size, tables, etc., test results, objects...
+
+how to use it with sample size, test results, tables
+
+`` `r nrow(data)` ``
+
+You must include the `r` inside the back ticks for the code to be evaluated - this is something easily forgotten. 
+
+
+#### How to access objects, columns, cells, variables etc
+
+str & environment 
+
+
+#### How to check if it has worked
+
+
+
+#### Formatting tips
+
+p values
+
+decimals/digits 
+
+
+
+-->
 <p><br></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
