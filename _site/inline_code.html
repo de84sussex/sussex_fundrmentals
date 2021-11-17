@@ -2531,33 +2531,29 @@ ExtRas
 
 
 <div class="d-article">
-<div class="d-contents d-contents-float">
-<nav class="l-text toc figcaption" id="TOC">
-<h3>Contents</h3>
-<ul>
-<li><a href="#coming-soon">Coming Soon!</a></li>
-</ul>
-</nav>
-</div>
-<h3 id="coming-soon">Coming Soon!</h3>
 <!--
 
 ### Inline Code
 
-The output of code can be included within the body of an RMarkdown document (i.e., 'inline') to increase accuracy and efficiency when reporting values. Inline code is used by enclosing any objects or functions inside a set of back ticks like this:
+The output of code can be included within the body of an RMarkdown document (i.e., 'inline') to increase accuracy and efficiency when reporting values/results. The output of the inline code will be entirely indistinguishable from the surrounding text in the document, as though you had written it manually. Inline code is used by enclosing objects or functions inside a set of back ticks within an RMarkdown file like this:
 
-.center[
+
+<center>
 
 `` `r function_goes_here()` ``
 
-]
+`` `r object_name_goes_here` ``
 
-By using inline code, we can avoid any typos when reporting results and it also means that if our data, statistical tests, or tables change in any way, the RMarkdown file will be updated with the new values automatically whenever you knit the document. The output of the inline code will be entirely indistinguishable from the surrounding text in the document, as though you had written it by hand yourself. 
+</center>
 
+By using inline code, we can avoid any typos when reporting results and it also means that if our data, results, or tables change in any way, the RMarkdown file will be updated with the new values automatically whenever we knit the document. 
+
+-->
+<!--
 
 ### How to use inline code
 
-We can use inline code to pull out information from a range of sources including  Sample size, tables, etc., test results, objects...
+We can use inline code to pull out information from a range of sources including sample size, tables, etc., test results, objects...
 
 how to use it with sample size, test results, tables
 
@@ -2571,7 +2567,9 @@ You must include the `r` inside the back ticks for the code to be evaluated - th
 str & environment 
 
 
-#### How to check if it has worked
+
+We can check if our inline code is correct without knitting the document by placing the cursor inside, or directly next to the line of code and pressing `ctrl + enter` or `command + enter`. If the code works, the result will be printed in the console. 
+
 
 
 

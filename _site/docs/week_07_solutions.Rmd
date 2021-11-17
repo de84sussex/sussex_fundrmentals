@@ -1,0 +1,102 @@
+---
+title: "Week 07 Data Viz: Solutions"
+author: "DE"
+date: "10/11/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = T)
+```
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+```{r}
+peng_data <- palmerpenguins::penguins
+```
+
+
+
+
+# Scatterplots
+
+```{r}
+
+peng_scatter_task <- ggplot2::ggplot(peng_data, aes(x = body_mass_g, y = flipper_length_mm))
+peng_scatter_task +
+  geom_point() +
+  labs(title = "Scatterplot of Body Mass & Flipper Length", x = "Body Mass (g)", y = "Flipper Length (mm)") +
+  cowplot::theme_cowplot()
+
+```
+
+
+
+
+
+
+
+
+
+```{r}
+
+peng_scatter_task2 <- ggplot2::ggplot(peng_data, aes(x = body_mass_g, y = flipper_length_mm))
+peng_scatter_task2 +
+  geom_point(colour = "orange", size = 2, shape = 16, alpha = 1) +
+  geom_smooth(method = "lm", se = FALSE, colour = "orange") +
+  labs(title = "Scatterplot of Body Mass & Flipper Length", x = "Body Mass (g)", y = "Flipper Length (mm)") +
+  theme_bw()
+
+```
+
+
+
+
+
+
+
+
+# Mean Plots
+
+```{r}
+
+peng_means_task <- ggplot2::ggplot(peng_data, aes(x = island, y = body_mass_g))
+peng_means_task +
+  stat_summary(fun = "mean", geom = "point", size = 4, colour = "orange") +  
+  labs(title = "Mean Penguin Body Mass per Island", x = "Island", y = "Body Mass (g)") +
+  theme_minimal()
+
+```
+
+
+# CIs
+
+```{r}
+
+peng_means_task2 <- ggplot2::ggplot(peng_data, aes(x = island, y = body_mass_g))
+peng_means_task2 +
+  stat_summary(fun.data = "mean_cl_normal", geom = "pointrange", colour = "#273358") +  
+  labs(title = "Mean Penguin Body Mass per Island", x = "Island", y = "Body Mass (g)") +
+  theme_minimal()
+
+```
+
+
+# Coords
+
+```{r}
+
+peng_means_task3 <- ggplot2::ggplot(peng_data, aes(x = island, y = body_mass_g))
+peng_means_task3 +
+  stat_summary(fun.data = "mean_cl_normal", geom = "pointrange", colour = "orange")  +  
+  labs(title = "Mean Penguin Body Mass per Island", x = "Island", y = "Body Mass (g)") +
+  coord_cartesian(ylim = c(2000, 5000)) + 
+  scale_y_continuous(breaks = seq(2000, 5000, 500)) +
+  theme_minimal()
+
+```
+
+
