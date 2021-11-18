@@ -2531,57 +2531,80 @@ ExtRas
 
 
 <div class="d-article">
-<!--
-
-### Inline Code
-
-The output of code can be included within the body of an RMarkdown document (i.e., 'inline') to increase accuracy and efficiency when reporting values/results. The output of the inline code will be entirely indistinguishable from the surrounding text in the document, as though you had written it manually. Inline code is used by enclosing objects or functions inside a set of back ticks within an RMarkdown file like this:
-
-
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#what-is-it">What is it?</a></li>
+<li><a href="#how-do-i-use-it">How do I use it?</a></li>
+<li><a href="#tips">Tips</a></li>
+<li><a href="#thats-all-there-is-to-it">&amp; that’s all there is to it!! 😀</a></li>
+</ul>
+</nav>
+</div>
+<h3 id="what-is-it">What is it?</h3>
+<p>The output of code can be included within the body of an RMarkdown document (i.e., ‘inline’) to increase accuracy and efficiency when reporting values/results. The output of the inline code will be entirely indistinguishable from the surrounding text in the document, as though you had written it manually. Inline code is used by enclosing objects or functions inside a set of back ticks within an RMarkdown file like this:</p>
 <center>
-
-`` `r function_goes_here()` ``
-
-`` `r object_name_goes_here` ``
-
+<p><code>`r function_goes_here()`</code></p>
+<p><code>`r object_name_goes_here`</code></p>
 </center>
-
-By using inline code, we can avoid any typos when reporting results and it also means that if our data, results, or tables change in any way, the RMarkdown file will be updated with the new values automatically whenever we knit the document. 
-
--->
-<!--
-
-### How to use inline code
-
-We can use inline code to pull out information from a range of sources including sample size, tables, etc., test results, objects...
-
-how to use it with sample size, test results, tables
-
-`` `r nrow(data)` ``
-
-You must include the `r` inside the back ticks for the code to be evaluated - this is something easily forgotten. 
-
-
-#### How to access objects, columns, cells, variables etc
-
-str & environment 
-
-
-
-We can check if our inline code is correct without knitting the document by placing the cursor inside, or directly next to the line of code and pressing `ctrl + enter` or `command + enter`. If the code works, the result will be printed in the console. 
-
-
-
-
-#### Formatting tips
-
-p values
-
-decimals/digits 
-
-
-
--->
+<p>By using inline code, we can avoid any typos when reporting results and it also means that if our data, results, or tables change in any way, the RMarkdown file will be updated with the new values automatically whenever we knit the document.</p>
+<h3 id="how-do-i-use-it">How do I use it?</h3>
+<p>We can use inline code to pull out information from a range of sources including the dataset itself, tables, test results, other objects we have created, or from the output of functions. An overview of the most common sources &amp; examples of the inline code we can use are given below.</p>
+<h4 id="sample-size">Sample size</h4>
+<p>We can find out the sample size of our data by using the <code>nrow()</code> function on a dataset, or by using the <code>length()</code> function on a vector. So to report the sample size in our RMarkdown document, we could write something like the below, where we give the name of our <strong>data</strong> in the brackets:</p>
+<center>
+<p><code>`r nrow(data)`</code></p>
+</center>
+<p>We’ll typically include this line in a sentence within a method section, such as:</p>
+<center>
+<p>The sample consisted of <code>`r nrow(data)`</code> participants.</p>
+</center>
+<p>Then when we knit our RMarkdown document, the sample size will be automatically printed in place of our inline code in the knitted file. If our data were to change in any way (i.e., from excluding participants), then our sample size would be automatically updated the next time we knitted this document, if we wrote it in this way.</p>
+<h4 id="test-results-other-objects-tables">Test results, other objects, &amp; tables</h4>
+<p>We can also report the results of statistical tests or pull out values from other objects in a relatively straightforward way.</p>
+<p>Whenever we run code that creates an object in RStudio it will appear in our <strong>Environment pane</strong>. Objects contain elements with different names, and those elements can also contain multiple pieces of information. But we can use the environment pane to find out the names of the elements in an object to work out how we can write code that accesses the pieces of information that we want.</p>
+<p>For example, if we were to run a <em>t</em>-test on some penguin data (<strong>peng_data</strong>) and saved the test result in an object called <strong>penguin_ttest</strong>, our environment pane would look something like this:</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/env.png" width="516" style="display: block; margin: auto;" /></p>
+</div>
+<p>We can use the blue ‘<strong>play button</strong>’ on the left side of our object name to see the elements it contains:</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/env2.png" width="515" style="display: block; margin: auto;" /></p>
+</div>
+<p>From this, we can see that we have 10 elements, the names of each of them are given next to the <strong>$</strong> such as <em>statistic</em>, <em>parameter</em>, <em>p.value</em>, <em>conf.int</em> and so on. We can also see that some of these elements also have more than one value associated with it, for example, for the <em>conf.int</em> element, the square brackets next to it tell us there are two values in this element, and we can access both or just one of them if we wanted to.</p>
+<p>So now we know where to find the names of the different elements in an object, the next part is to actually write some code to select them! We can do this using the <strong>$</strong> to select an element in our object, and by using a set of <strong>[ ]</strong> to select one of multiple possible values where this is applicable.</p>
+<p>So if we wanted to report the <em>p.value</em> from this <strong>penguin_ttest</strong> object using inline code, we could write the below:</p>
+<center>
+<p><code>`r penguin_ttest$p.value`</code></p>
+</center>
+<p>If we wanted to report our estimates separately, we can follow the same steps as above, but this time we need to add the <strong>[ ]</strong> and the number that corresponds to the item we want to print out, so the below would print out the first value of the estimate element:</p>
+<center>
+<p><code>`r penguin_ttest$estimate[1]`</code></p>
+</center>
+<p>And this would print out the second value:</p>
+<center>
+<p><code>`r penguin_ttest$estimate[2]`</code></p>
+</center>
+<p>This method also works for any tables we have created.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/sum.png" width="515" style="display: block; margin: auto;" /></p>
+</div>
+<p>Where we could use the following line to pull out the mean flipper length for female penguins in our table:</p>
+<center>
+<p><code>`r penguin_summary$Mean_Flipper[1]`</code></p>
+</center>
+<h3 id="tips">Tips</h3>
+<ul>
+<li><p>You must include the <code>r</code> inside the back ticks for the code to be evaluated - this is something easily forgotten.</p></li>
+<li><p>We can check if our inline code is correct without knitting the document by placing the cursor inside the brackets, or directly next to the line of code and pressing <code>ctrl + enter</code> or <code>command + enter</code> to run it. If the code works, the result will be printed in the console and will appear in the .Rmd as a pop-up.</p></li>
+<li><p>We can format our values further by using the <code>round()</code> function i.e.,</p></li>
+</ul>
+<center>
+<p><code>`r penguin_ttest$estimate[1] %&gt;% round(digits = 2)`</code></p>
+</center>
+<p><br></p>
+<h3 id="thats-all-there-is-to-it">&amp; that’s all there is to it!! 😀</h3>
 <p><br></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

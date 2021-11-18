@@ -1,0 +1,66 @@
+---
+title: "Untitled"
+author: "DE"
+date: "17/11/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+library(GGally)
+library(correlation)
+library(effectsize)
+```
+
+```{r}
+peng_data <- palmerpenguins::penguins %>% na.omit()
+```
+
+```{r}
+peng_scatter <- GGally::ggscatmat(peng_data, columns = c("body_mass_g", "flipper_length_mm", "bill_depth_mm"))
+```
+
+```{r}
+peng_scatter
+```
+
+```{r}
+
+```
+
+
+
+
+
+
+```{r}
+peng_cor <- peng_data %>% 
+  dplyr::select(body_mass_g, flipper_length_mm) %>% 
+correlation::correlation()
+```
+
+```{r}
+ttest_output <- peng_data %>% 
+t.test(body_mass_g ~ sex, data = .)
+```
+
+# Results
+
+The correlation coefficient was `r peng_cor$r`.
+
+The correlation coefficient was `r peng_cor$r %>% round(digits = 2)`.
+
+
+
+
+
+
+
+
+
+
