@@ -33,7 +33,7 @@ library(emo)
 
 ### Complete the tutorial for week 8:
 
-As a reminder, the remaining tutorials focus on specific statistical tests. These tutorials will always be available for reference whenever you need to do a statistical test and so the content does not need to be memorised. Similarly, if you don't use the test covered by the tutorial then you do not need to complete it if you don't want to. 
+As a reminder, the remaining tutorials focus on specific statistical tests. These tutorials will always be available for reference whenever you need to do a statistical test and so the content does not need to be memorised. Similarly, if you don't use the test covered by the tutorial then you do not need to complete it if you don't want to. Bayesian methods will not be covered in the practical sessions so it is up to you whether you want to complete those sections of the tutorials. 
 
 :::ojtask
 

@@ -1,5 +1,5 @@
 ---
-title: "Week 10: ANOVA"
+title: "Week 10: 'Reading Week'"
 output:
   distill::distill_article:
     toc: true
@@ -12,11 +12,11 @@ knitr::opts_chunk$set(echo = FALSE)
 xaringanExtra::use_clipboard()
 ```
 
+<!--
+
 ### HappyHouR 
 
 Slides [(*open in a new tab*)](https://fundrmentals-slides.netlify.app/week_10/index.html){target="_blank"}
-
-<!--
 
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
@@ -29,10 +29,14 @@ Slides [(*open in a new tab*)](https://fundrmentals-slides.netlify.app/week_10/i
 
 :::ojtask
 
-Work through either the discovr_10 (moderation & mediation), discovr_12 (ANCOVA), discovr_13 (factorial designs), discovr_14 (repeated measures designs), discovr_15 (mixed designs), discovr_17 (exploratory factor analysis), or discovr_20 (logistic regression) tutorial by pasting the below code into the **Console** in RStudio & pressing **Enter**.
+Work through either the discovr_10 (moderation & mediation), discovr_11 (ANOVA), discovr_12 (ANCOVA), discovr_13 (factorial designs), discovr_14 (repeated measures designs), discovr_15 (mixed designs), discovr_17 (exploratory factor analysis), or discovr_20 (logistic regression) tutorial by pasting the below code into the **Console** in RStudio & pressing **Enter**. Bayesian methods will not be covered in the practical sessions so it is up to you whether you want to complete those sections of the tutorials. 
 
 ```{r, eval = F, echo = T}
 learnr::run_tutorial("discovr_10", package = "discovr")
+```
+
+```{r, eval = F, echo = T}
+learnr::run_tutorial("discovr_11", package = "discovr")
 ```
 
 ```{r, eval = F, echo = T}
@@ -63,7 +67,7 @@ learnr::run_tutorial("discovr_20", package = "discovr")
 
 <br>
 
-For our practical session next week, write your questions/the topics you would like me to go over on the padlet below!
+For our practical session next week, write your questions/the topics you would like me to go over on the padlet below! I will prepare materials specifically covering your questions/suggestions so please make sure to put your questions here with enough time before the session to ensure they are answered.
 
 
 ::: {.padlet-embed style="border: dashed 2px orange; rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:white"}
