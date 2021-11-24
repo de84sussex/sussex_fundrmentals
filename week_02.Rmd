@@ -69,3 +69,17 @@ learnr::run_tutorial("discovr_01", package = "discovr")
 
 <br>
 
+<div class="button-box col-lg-12">
+
+<a href="https://fundrmentals.netlify.app/week_01.html">
+<button class="button3">Previous week</button>
+</a>
+<a href="https://fundrmentals.netlify.app/week_03.html">
+<button class="button4">Next week</button>
+</a>
+
+</div>
+
+<br>
+
+

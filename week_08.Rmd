@@ -43,3 +43,16 @@ As a reminder, the remaining tutorials focus on specific statistical tests. Thes
 :::
 
 <br>
+
+<div class="button-box col-lg-12">
+
+<a href="https://fundrmentals.netlify.app/week_07.html">
+<button class="button3">Previous week</button>
+</a>
+<a href="https://fundrmentals.netlify.app/week_09.html">
+<button class="button4">Next week</button>
+</a>
+
+</div>
+
+<br>

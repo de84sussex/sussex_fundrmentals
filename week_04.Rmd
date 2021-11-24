@@ -30,3 +30,16 @@ learnr::run_tutorial("discovr_05", package = "discovr")
 *This tutorial is pretty long, and generally visualising data isn't something we learn by heart (or need to), but you should aim to try go through the ggplot2 section as a minimum, then ideally complete the boxplots, plotting means, and scatterplots sections (you can ignore the faceting tasks if you want to). There's also an empty code chunk for you to have a go at creating a plot from the emp_data in the worksheet for week 04.*
 
 <br>
+
+<div class="button-box col-lg-12">
+
+<a href="https://fundrmentals.netlify.app/week_03.html">
+<button class="button3">Previous week</button>
+</a>
+<a href="https://fundrmentals.netlify.app/week_05.html">
+<button class="button4">Next week</button>
+</a>
+
+</div>
+
+<br>

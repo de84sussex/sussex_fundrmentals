@@ -67,8 +67,7 @@ learnr::run_tutorial("discovr_20", package = "discovr")
 
 <br>
 
-For our practical session next week, write your questions/the topics you would like me to go over on the padlet below! I will prepare materials specifically covering your questions/suggestions so please make sure to put your questions here with enough time before the session to ensure they are answered.
-
+For our practical session next week, write your questions/the topics you would like me to go over on the padlet below! I will prepare materials specifically covering your questions/suggestions so please make sure to put your questions here with enough time before the session to ensure they are answered. [*Open padlet in a new tab*](https://uofsussex.padlet.org/de84/9gba8ktbw8egpqwm){target="_blank"}
 
 ::: {.padlet-embed style="border: dashed 2px orange; rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:white"}
 <p style="padding:0;margin:0">
@@ -85,5 +84,18 @@ For our practical session next week, write your questions/the topics you would l
 :::
 
 
+
+<br>
+
+<div class="button-box col-lg-12">
+
+<a href="https://fundrmentals.netlify.app/week_09.html">
+<button class="button3">Previous week</button>
+</a>
+<a href="https://fundrmentals.netlify.app/week_11.html">
+<button class="button4">Next week</button>
+</a>
+
+</div>
 
 <br>

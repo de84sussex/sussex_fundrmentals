@@ -431,3 +431,42 @@ div.ex {
   color: white;
 }
 
+
+
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4d83c9;
+  font-size: 18px;
+  padding: 5px;
+  width: 180px;
+  cursor: pointer;
+  float:left;
+  position: relative;
+  left: 0px;
+}
+
+.button3:hover {
+  background-color: #4d83c9;
+  color: white;
+}
+
+.button4 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4d83c9;
+  font-size: 18px;
+  padding: 5px;
+  width: 180px;
+  cursor: pointer;
+  float:right;
+  position: relative;
+  right: 0px;
+
+}
+
+.button4:hover {
+  background-color: #4d83c9;
+  color: white;
+}
