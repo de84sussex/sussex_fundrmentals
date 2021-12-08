@@ -38,8 +38,8 @@ navbar:
         href: ./resouRces.html
       - text: "Useful Functions"
         href: ./functions.html
-#      - text: "Error Search"
-#        href: ./erroRs.html
+      - text: "How do I?"
+        href: ./HowDoI.html
       - text: "R Help Desk"
         href: ./HD.html
       - text: "Writing aRticles"

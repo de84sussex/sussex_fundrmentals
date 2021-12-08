@@ -31,16 +31,17 @@ library(emo)
 
 <br>
 
-### Complete the tutorial for week 9:
-
-As a reminder, the remaining tutorials focus on specific statistical tests. These tutorials will always be available for reference whenever you need to do a statistical test and so the content does not need to be memorised. Similarly, if you don't use the test covered by the tutorial then you do not need to complete it if you don't want to. Bayesian methods will not be covered in the practical sessions so it is up to you whether you want to complete those sections of the tutorials. 
+### Accessing tutorials:
 
 :::ojtask
 
-<font size="+1">Access the week 9 tutorial information [here..](https://fundrmentals.netlify.app/week_09.html#complete-the-tutorial-for-next-week)</font>
+`r emo::ji("partying_face")` You made it!! There are no more sessions to complete! But remember you can access all the materials again to revise your skills - you can find more resources [here...](https://fundrmentals.netlify.app/resources) & in the **ExtRas** menu
 
 :::
 
+<br>
+
+### Submit your FundRmentals Feedback [here](https://docs.google.com/forms/d/e/1FAIpQLScpQQXv9FL-dFWFpdF1YGRwm4IYDAktfSGfVrHo-_e0vk24qA/viewform?usp=sf_link)
 
 
 

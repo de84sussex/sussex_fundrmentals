@@ -87,27 +87,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>FundRmentals: Week 06: Summarising &amp; the %&gt;%</title>
+  <title>FundRmentals: How Do I?</title>
 
+  <meta property="description" itemprop="description" content="This page contains common questions &amp; some answers! More coming soon!"/>
 
   <link rel="icon" type="image/png" href="img/Lightbulb.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="FundRmentals: Week 06: Summarising &amp; the %&gt;%"/>
+  <meta property="og:title" content="FundRmentals: How Do I?"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="This page contains common questions &amp; some answers! More coming soon!"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="FundRmentals"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="FundRmentals: Week 06: Summarising &amp; the %&gt;%"/>
+  <meta property="twitter:title" content="FundRmentals: How Do I?"/>
+  <meta property="twitter:description" content="This page contains common questions &amp; some answers! More coming soon!"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Week 06: Summarising & the %>%"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","theme"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["dans-theme.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["How Do I?"]},{"type":"character","attributes":{},"value":["This page contains common questions & some answers! More coming soon!\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","theme"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["dans-theme.css"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2504,7 +2507,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Week 06: Summarising & the %>%","authors":[]}
+{"title":"How Do I?","description":"This page contains common questions & some answers! More coming soon!","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2564,10 +2567,10 @@ ExtRas
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Week 06: Summarising &amp; the %&gt;%</h1>
+<h1>How Do I?</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>This page contains common questions &amp; some answers! More coming soon!</p></p>
 </div>
 
 
@@ -2576,38 +2579,66 @@ ExtRas
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#happyhour">HappyHouR</a></li>
-<li><a href="#complete-the-tutorial-for-next-week">Complete the tutorial for next week:</a></li>
+<li><a href="#how-do-i">How Do I? 💭</a></li>
 </ul>
 </nav>
 </div>
-<h3 id="happyhour">HappyHouR</h3>
-<p>Slides <a href="https://fundrmentals-slides.netlify.app/week_06/index.html" target="_blank">(<em>open in a new tab</em>)</a></p>
-<!--
-
-<iframe id="inlineFrameExample"
-    title="Inline Frame Example"
-    height="360"
-    src="">
-</iframe>
-
--->
-<p>Download the <a href="./docs/week_04.Rmd">worksheet here</a></p>
-<p>Download the <a href="./docs/week_04_solutions.Rmd">worksheet with solutions here</a></p>
-<h3 id="complete-the-tutorial-for-next-week">Complete the tutorial for next week:</h3>
-<div class="ojtask">
-<p>Work through the discovr_07 tutorial on associations by pasting the below code into the <strong>Console</strong> in RStudio &amp; pressing <strong>Enter</strong>.</p>
+<h3 id="how-do-i">How Do I? 💭</h3>
+<p>Change the parts in CAPS to match your data!</p>
+<details>
+<summary>
+How do I create a composite (mean) score?
+</summary>
+<p><br></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>learnr</span><span class='fu'>::</span><span class='fu'><a href='https://pkgs.rstudio.com/learnr/reference/run_tutorial.html'>run_tutorial</a></span><span class='op'>(</span><span class='st'>"discovr_07"</span>, package <span class='op'>=</span> <span class='st'>"discovr"</span><span class='op'>)</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>DATA</span> <span class='op'>&lt;-</span> <span class='va'>DATA</span> <span class='op'>%&gt;%</span> 
+    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/rowwise.html'>rowwise</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>
+    NEW_COLUMN_NAME <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='va'>VARIABLE1</span>, <span class='va'>VARIABLE2</span>, <span class='va'>VARIABLE3</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span>
 </code></pre>
 </div>
 </div>
-</div>
+<p><em>Any rows with missing data will have NA in the new column</em></p>
+</details>
+<details>
+<summary>
+How do I create a composite (mean) score when I have missing data?
+</summary>
 <p><br></p>
-<div class="button-box col-lg-12">
-<p><a href="https://fundrmentals.netlify.app/week_05.html"> <button class="button3">Previous week</button> </a> <a href="https://fundrmentals.netlify.app/week_07.html"> <button class="button4">Next week</button> </a></p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>DATA</span> <span class='op'>&lt;-</span> <span class='va'>DATA</span> <span class='op'>%&gt;%</span> 
+    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/rowwise.html'>rowwise</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>
+    NEW_COLUMN_NAME <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='va'>VARIABLE1</span>, <span class='va'>VARIABLE2</span>, <span class='va'>VARIABLE3</span><span class='op'>)</span>, na.rm <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
 </div>
+</div>
+<p><em>By including the na.rm argument, we can calculate the mean of our variables, even where there is missing data in any of them</em></p>
+</details>
+<details>
+<summary>
+How do I create a composite (mean) score with a certain amount of missing data?
+</summary>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>VARIABLE_MEAN</span> <span class='op'>&lt;-</span> <span class='va'>DATA</span> <span class='op'>%&gt;%</span> 
+      <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='va'>VARIABLE1</span>, <span class='va'>VARIABLE2</span>, <span class='va'>VARIABLE3</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+      <span class='fu'>sjstats</span><span class='fu'>::</span><span class='fu'><a href='https://strengejacke.github.io/sjstats/reference/mean_n.html'>mean_n</a></span><span class='op'>(</span><span class='va'>.</span>, <span class='fl'>2</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+      <span class='fu'>tibble</span><span class='fu'>::</span><span class='fu'><a href='https://tibble.tidyverse.org/reference/as_tibble.html'>as_tibble_col</a></span><span class='op'>(</span><span class='va'>.</span>, column_name <span class='op'>=</span> <span class='st'>"VARIABLE_MEAN"</span><span class='op'>)</span>
+
+<span class='va'>DATA</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>cbind</a></span><span class='op'>(</span><span class='va'>DATA</span>, <span class='va'>VARIABLE_MEAN</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<p><em>The first part creates a mean of the variables we have selected, only where there are at least 2 responses (you can use any number here in the mean_n() function), and produces a tibble called varible_mean which contains those values. The second part binds that new column to our existing data</em></p>
+</details>
+<p><br></p>
+<h4 id="submit-your-how-do-i-here">Submit your ‘How do I?’ <a href="https://docs.google.com/forms/d/e/1FAIpQLScNFE9GSstJNGIe_RsKRO5LoUgzv4st-Pzu610Sz-pdiyRBtA/viewform?usp=sf_link">here</a></h4>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNFE9GSstJNGIe_RsKRO5LoUgzv4st-Pzu610Sz-pdiyRBtA/viewform?embedded=true" width="640" height="510" frameborder="0" marginheight="0" marginwidth="0">
+Loading…
+</iframe>
 <p><br></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

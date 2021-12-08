@@ -1,0 +1,88 @@
+---
+title: "How Do I?"
+description: |
+  This page contains common questions & some answers! More coming soon!
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    theme: dans-theme.css
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(xaringanExtra)
+xaringanExtra::use_clipboard()
+library(emo)
+```
+
+### How Do I? `r emo::ji("thought_balloon")`
+
+Change the parts in CAPS to match your data!
+
+<details>
+  <summary>How do I create a composite (mean) score?</summary>
+<br>
+
+```{r, eval = F, echo = T}
+DATA <- DATA %>% 
+    dplyr::rowwise() %>% 
+    dplyr::mutate(
+    NEW_COLUMN_NAME = mean(c(VARIABLE1, VARIABLE2, VARIABLE3)))
+```
+
+
+
+*Any rows with missing data will have NA in the new column*
+
+</details>
+
+<details>
+  <summary>How do I create a composite (mean) score when I have missing data?</summary>
+
+<br>
+
+```{r, eval = F, echo = T}
+DATA <- DATA %>% 
+    dplyr::rowwise() %>% 
+    dplyr::mutate(
+    NEW_COLUMN_NAME = mean(c(VARIABLE1, VARIABLE2, VARIABLE3), na.rm = TRUE))
+```
+
+*By including the na.rm argument, we can calculate the mean of our variables, even where there is missing data in any of them*
+
+</details>
+
+
+
+<details>
+  <summary>How do I create a composite (mean) score with a certain amount of missing data?</summary>
+
+
+
+```{r, eval = F, echo = T}
+VARIABLE_MEAN <- DATA %>% 
+      dplyr::select(VARIABLE1, VARIABLE2, VARIABLE3) %>% 
+      sjstats::mean_n(., 2) %>% 
+      tibble::as_tibble_col(., column_name = "VARIABLE_MEAN")
+
+DATA <- cbind(DATA, VARIABLE_MEAN)
+```
+
+
+*The first part creates a mean of the variables we have selected, only where there are at least 2 responses (you can use any number here in the mean_n() function), and produces a tibble called varible_mean which contains those values. The second part binds that new column to our existing data*
+
+
+</details>
+
+
+<br>
+
+#### Submit your 'How do I?' [here](https://docs.google.com/forms/d/e/1FAIpQLScNFE9GSstJNGIe_RsKRO5LoUgzv4st-Pzu610Sz-pdiyRBtA/viewform?usp=sf_link)
+
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNFE9GSstJNGIe_RsKRO5LoUgzv4st-Pzu610Sz-pdiyRBtA/viewform?embedded=true" width="640" height="510" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+<br>
+
