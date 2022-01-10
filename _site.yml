@@ -45,7 +45,7 @@ navbar:
       - text: "Writing aRticles"
         href: ./rmd_tutorial.html
       - text: "Writing a DisseRtation"
-        href: ./disso_rmarkdown_tutorial.html
+        href: ./rmarkdown.html
       - text: "sussexthesis Template"
         href: ./sussexthesis.html
       - text: "Using Inline Code"
