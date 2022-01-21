@@ -60,7 +60,7 @@ Use the table below & hover over the modules to find out what resources cover ea
 
 - Yr 2: Qualitative and Quantitative Methods (QQM) <a href="https://canvas.sussex.ac.uk/courses/12657" target="_blank"><img src="./img/QQM.png"  style="width:3%;height:3%"></a> 
 
-- Yrs 1 & 2: SeminRs <a href="https://and.netlify.app/seminr/" target="_blank"><img src="./img/SMR.png"  style="width:4%;height:4%"></a> 
+- Yrs 1 & 2: SeminRs <a href="https://and2021.netlify.app/seminr/" target="_blank"><img src="./img/SMR.png"  style="width:4%;height:4%"></a> 
 
 
 
@@ -117,7 +117,7 @@ Use the table below & hover over the modules to find out what resources cover ea
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 01</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 01</p></span></div>
     </td>
   </tr> 
   
@@ -139,7 +139,7 @@ Use the table below & hover over the modules to find out what resources cover ea
     <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 03</p></span></div>
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 03</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 03</p></span></div>
     </td>
   </tr>
   
@@ -150,7 +150,7 @@ Use the table below & hover over the modules to find out what resources cover ea
     <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 02</p><p>Pract 02</p></span></div>
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 04</p><p>LU Sem 01</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 04</p><p>LU Sem 01</p></span></div>
     </td>
   </tr>
   
@@ -163,7 +163,7 @@ Use the table below & hover over the modules to find out what resources cover ea
     <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Pract 01</p><p>Pract 05</p><p>Tut 06</p><p>Pract 09</p></span></div>
     <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12722" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Pract 03</p><p>Pract 05</p></span></div>
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>LU Sem 04</p><p>LU Sem 08</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>LU Sem 04</p><p>LU Sem 08</p></span></div>
     </td>
   </tr>
   
@@ -174,7 +174,7 @@ Use the table below & hover over the modules to find out what resources cover ea
     <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Pract 03</p></span></div>
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 01</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 01</p></span></div>
     </td>
   </tr>
 
@@ -185,7 +185,7 @@ Use the table below & hover over the modules to find out what resources cover ea
     <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Pract 03</p></span></div>
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 01</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 01</p></span></div>
     </td>
   </tr>
   
@@ -196,7 +196,7 @@ Use the table below & hover over the modules to find out what resources cover ea
     <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Pract 03</p><p>Pract 05</p><p>Tut 07</p><p>Pract 09</p></span></div>
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 03</p><p>LU Sem 02</p><p>LU Sem 05</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 03</p><p>LU Sem 02</p><p>LU Sem 05</p></span></div>
     </td>
   </tr>
   
@@ -210,7 +210,7 @@ Use the table below & hover over the modules to find out what resources cover ea
     <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Pract 03</p><p>Pract 05</p></span></div>
     <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12722" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Pract 02</p><p>Pract 03</p></span></div>
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 05</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 05</p></span></div>
     </td>
   </tr>
 
@@ -222,7 +222,7 @@ Use the table below & hover over the modules to find out what resources cover ea
     <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 04</p><p>Pract 04</p><p>Pract 05</p><p>Tut 06</p><p>Pract 06</p><p>Tut 07</p><p>Pract 07</p><p>Tut 09</p><p>Pract 09</p></span></div>
     <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12722" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Pract 02</p></span></div>
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 06</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 06</p></span></div>
     </td>
   </tr>
 
