@@ -2724,7 +2724,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/clipboard-2.0.6/clipboard.min.js"></script>
   <link href="site_libs/xaringanExtra-clipboard-0.2.4/xaringanExtra-clipboard.css" rel="stylesheet" />
   <script src="site_libs/xaringanExtra-clipboard-0.2.4/xaringanExtra-clipboard.js"></script>
@@ -2822,6 +2822,7 @@ ExtRas
 <ul>
 <li><a href="#accessing-tutorials">Accessing Tutorials</a></li>
 <li><a href="#the-r-dex">The R-dex</a></li>
+<li><a href="#analyses-covered">Analyses Covered</a></li>
 <li><a href="#useful-resources">Useful Resources</a></li>
 </ul>
 </nav>
@@ -2852,7 +2853,7 @@ ExtRas
 <li><p>Yr 1: Analysing Data (AnD) <a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img src="img/AD.png"  style="width:3%;height:3%"></a></p></li>
 <li><p>Yr 2: Discovering Statistics (DS) <a href="https://canvas.sussex.ac.uk/courses/12722" target="_blank"><img src="img/DS.png"  style="width:3%;height:3%"></a></p></li>
 <li><p>Yr 2: Qualitative and Quantitative Methods (QQM) <a href="https://canvas.sussex.ac.uk/courses/12657" target="_blank"><img src="img/QQM.png"  style="width:3%;height:3%"></a></p></li>
-<li><p>Yrs 1 &amp; 2: SeminRs <a href="https://and2021.netlify.app/seminr/" target="_blank"><img src="img/SMR.png"  style="width:4%;height:4%"></a></p></li>
+<li><p>Optional SeminRs <a href="https://and2021.netlify.app/seminr/" target="_blank"><img src="img/SMR.png"  style="width:4%;height:4%"></a></p></li>
 </ul>
 <p><br></p>
 <table style="width:100%">
@@ -3528,6 +3529,71 @@ Tut 07
 </td>
 </tr>
 </table>
+<h3 id="analyses-covered">Analyses Covered</h3>
+<p>It is the supervisor’s responsibility to teach any analyses and statistical techniques not taught by methods modules. A full list of the analyses covered in first- and second-year can be found below:</p>
+<ul>
+<li><p><strong>Independent <em>t</em>-test</strong></p></li>
+<li><p><strong>Chi-Square</strong></p></li>
+<li><p><strong>Correlation</strong></p>
+<ul>
+<li>Pearson’s <span class="math inline">\(r\)</span> (2 continuous variables)</li>
+<li>Spearman’s <span class="math inline">\(r_{s}\)</span> (but not in depth - used in factor analysis on likert scales)</li>
+</ul></li>
+<li><p><strong>Simple Regression</strong></p>
+<ul>
+<li>1 continuous predictor, 1 continuous outcome</li>
+</ul></li>
+<li><p><strong>Multiple Regression</strong></p>
+<ul>
+<li>2+ continuous predictors, 1 continuous outcome</li>
+<li>2+ continuous predictors, 1 categorical predictor (2 levels), 1 continuous outcome</li>
+</ul></li>
+<li><p><strong>Independent Anova</strong></p>
+<ul>
+<li>One-way: 1 categorical predictor (3 levels using dummy coding, planned contrasts, and post-hoc tests), 1 continuous outcome</li>
+<li>Two-way: 2 categorical predictors (3 levels &amp; 2 levels)</li>
+<li>Simple effects analysis</li>
+</ul></li>
+<li><p><strong>Ancova</strong></p>
+<ul>
+<li>1 categorical predictor (3 levels with orthogonal contrasts), 1 continuous covariate, 1 continuous outcome</li>
+</ul></li>
+<li><p><strong>Repeated Measures Anova</strong></p>
+<ul>
+<li>One-way: 1 RM categorical predictor (4 levels using planned contrasts and post-hoc tests), 1 continuous outcome</li>
+<li>Two-way: 2 RM categorical predictors (3 levels &amp; 3 levels, 1 continuous outcome</li>
+<li>Simple effects analysis &amp; post hoc interaction tests</li>
+</ul></li>
+<li><p><strong>Mixed Designs</strong></p>
+<ul>
+<li>1 independent categorical predictor (2 levels), 2 repeated categorical predictors (3 levels &amp; 3 levels), 1 continuous outcome</li>
+</ul></li>
+<li><p><strong>Logistic Regression</strong></p>
+<ul>
+<li>1 categorical predictor (2 levels), 1 categorical outcome (2 levels)</li>
+<li>1 categorical predictor (2 levels), 1 continuous predictor, 1 categorical outcome (2 levels)</li>
+</ul></li>
+<li><p><strong>Exploratory Factor Analysis</strong></p>
+<ul>
+<li>Using likert scale data for questionnaire development</li>
+</ul></li>
+<li><p><strong>Reliability and Validity Analyses</strong></p>
+<ul>
+<li>Omega &amp; alpha</li>
+<li>Convergent and discriminant validity</li>
+</ul></li>
+<li><p><strong>Moderation</strong></p>
+<ul>
+<li>1 continuous predictor, 1 continuous moderator, 1 continuous outcome</li>
+<li>Simple slopes analysis</li>
+<li>Johnson-Neyman interval</li>
+</ul></li>
+<li><p><strong>Mediation</strong></p>
+<ul>
+<li>1 continuous predictor, 1 continuous mediator, 1 continuous outcome</li>
+<li>1 continuous predictor, 2 continuous mediators, 1 continuous outcome</li>
+</ul></li>
+</ul>
 <h3 id="useful-resources">Useful Resources</h3>
 <ul>
 <li><p>Brush up on your stats knowledge with <a href="https://www.youtube.com/user/ProfAndyField/videos">Prof Andy Field’s Lectures</a></p></li>
@@ -3546,6 +3612,15 @@ Tut 07
 <div class="d-appendix">
 </div>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->

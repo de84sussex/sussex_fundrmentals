@@ -60,7 +60,7 @@ Use the table below & hover over the modules to find out what resources cover ea
 
 - Yr 2: Qualitative and Quantitative Methods (QQM) <a href="https://canvas.sussex.ac.uk/courses/12657" target="_blank"><img src="./img/QQM.png"  style="width:3%;height:3%"></a> 
 
-- Yrs 1 & 2: SeminRs <a href="https://and2021.netlify.app/seminr/" target="_blank"><img src="./img/SMR.png"  style="width:4%;height:4%"></a> 
+- Optional SeminRs <a href="https://and2021.netlify.app/seminr/" target="_blank"><img src="./img/SMR.png"  style="width:4%;height:4%"></a> 
 
 
 
@@ -316,6 +316,66 @@ Use the table below & hover over the modules to find out what resources cover ea
 
 
 </table>
+
+
+### Analyses Covered
+
+It is the supervisor's responsibility to teach any analyses and statistical techniques not taught by methods modules. A full list of the analyses covered in first- and second-year can be found below:
+
+- **Independent *t*-test**
+
+- **Chi-Square**
+
+- **Correlation**
+  - Pearson's $r$ (2 continuous variables)
+  - Spearman's $r_{s}$ (but not in depth - used in factor analysis on likert scales)
+
+- **Simple Regression**
+  - 1 continuous predictor, 1 continuous outcome
+  
+- **Multiple Regression**
+  - 2+ continuous predictors, 1 continuous outcome
+  - 2+ continuous predictors, 1 categorical predictor (2 levels), 1 continuous outcome
+
+- **Independent Anova**
+  - One-way: 1 categorical predictor (3 levels using dummy coding, planned contrasts, and post-hoc tests), 1 continuous outcome
+  - Two-way: 2 categorical predictors (3 levels & 2 levels)
+  - Simple effects analysis
+  
+- **Ancova**
+  - 1 categorical predictor (3 levels with orthogonal contrasts), 1 continuous covariate, 1 continuous outcome
+
+- **Repeated Measures Anova**
+  - One-way: 1 RM categorical predictor (4 levels using planned contrasts and post-hoc tests), 1 continuous outcome
+  - Two-way: 2 RM categorical predictors (3 levels & 3 levels, 1 continuous outcome
+  - Simple effects analysis & post hoc interaction tests
+
+- **Mixed Designs**
+  - 1 independent categorical predictor (2 levels), 2 repeated categorical predictors (3 levels & 3 levels), 1 continuous outcome
+
+- **Logistic Regression**
+  - 1 categorical predictor (2 levels), 1 categorical outcome (2 levels)
+  - 1 categorical predictor (2 levels), 1 continuous predictor, 1 categorical outcome (2 levels)
+
+- **Exploratory Factor Analysis**
+  - Using likert scale data for questionnaire development
+  
+- **Reliability and Validity Analyses**
+  - Omega & alpha
+  - Convergent and discriminant validity
+
+- **Moderation**
+  - 1 continuous predictor, 1 continuous moderator, 1 continuous outcome
+  - Simple slopes analysis
+  - Johnson-Neyman interval
+
+- **Mediation**
+  - 1 continuous predictor, 1 continuous mediator, 1 continuous outcome
+  - 1 continuous predictor, 2 continuous mediators, 1 continuous outcome
+
+
+
+
 
 
 ### Useful Resources
