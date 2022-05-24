@@ -159,7 +159,7 @@ d-article ul > li { /*to add back in space between bullet items that I took away
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 100px;
   background-color: black;
   color: #fff;
   text-align: center;
@@ -689,11 +689,6 @@ div.uhoh {
 div.uhoh {
   background-image: url("img/uhoh.png");
 }
-
-
-
-
-
 
 
 

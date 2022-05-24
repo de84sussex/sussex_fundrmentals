@@ -16,6 +16,9 @@ xaringanExtra::use_clipboard()
 library(emo)
 ```
 
+<!-- td{font-family: Arial;     </style>;} -->
+
+
 
 
 ### Accessing Tutorials
@@ -50,22 +53,17 @@ learnr::run_tutorial("discovr_01", package = "discovr")
 ### The R-dex
 
 
-Use the table below & hover over the modules to find out what resources cover each topic (i.e., tutorials (tut), practicals (pract) & seminars (sem)), & what week on Canvas to find them! 
+Use the table below & hover over the modules to find out what resources cover each topic (i.e., tutorials (tut), practicals (pract), skills labs (lab), & seminars (sem)), & what week on Canvas to find them! 
 
-- Yr 1: Psychology as a Science (PAAS) <a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img src="./img/PAAS.png"  style="width:4%;height:4%"></a> 
+- Yr 1: Psychology as a Science (PAAS) <a href="https://canvas.sussex.ac.uk/courses/12684" target="_blank"><img src="./img/PAAS.png"  style="width:4%;height:4%"></a> 
 
-- Yr 1: Analysing Data (AnD) <a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img src="./img/AD.png"  style="width:3%;height:3%"></a> 
+- Yr 1: Analysing Data (AnD) <a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img src="./img/SMR2.png"  style="width:4%;height:3%"></a> 
 
-- Yr 2: Discovering Statistics (DS) <a href="https://canvas.sussex.ac.uk/courses/12722" target="_blank"><img src="./img/DS.png"  style="width:3%;height:3%"></a> 
+- Yr 2: Discovering Statistics (DS) <a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img src="./img/DS.png"  style="width:3%;height:3%"></a> 
 
-- Yr 2: Qualitative and Quantitative Methods (QQM) <a href="https://canvas.sussex.ac.uk/courses/12657" target="_blank"><img src="./img/QQM.png"  style="width:3%;height:3%"></a> 
+- Yr 2: Qualitative and Quantitative Methods (QQM) <a href="https://canvas.sussex.ac.uk/courses/17306" target="_blank"><img src="./img/QQM.png"  style="width:3%;height:3%"></a> 
 
 - Optional SeminRs <a href="https://and2021.netlify.app/seminr/" target="_blank"><img src="./img/SMR.png"  style="width:4%;height:4%"></a> 
-
-
-
-
-
 
 
 <br>
@@ -77,10 +75,10 @@ Use the table below & hover over the modules to find out what resources cover ea
   </tr>
 
   <tr>
-    <td>R/RStudio installation</td>
-    <td>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Pract 03</p></span></div>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 01</p></span></div>
+    <td style="font-size: 0.85rem">R/RStudio installation</td>
+    <td style="font-size: 0.85rem">
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12684" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 01</p></span></div>
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
@@ -88,10 +86,10 @@ Use the table below & hover over the modules to find out what resources cover ea
   </tr>
 
   <tr>
-    <td>RStudio tours</td>
-    <td>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Pract 03</p></span></div>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 01</p></span></div>
+    <td style="font-size: 0.85rem">RStudio tours</td>
+    <td style="font-size: 0.85rem">
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12684" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 01</p></span></div>
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
@@ -100,227 +98,450 @@ Use the table below & hover over the modules to find out what resources cover ea
   
   
   <tr>
-    <td>R Projects</td>
-    <td>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Pract 03</p></span></div>
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <td style="font-size: 0.85rem">R Projects</td>
+    <td style="font-size: 0.85rem">
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12684" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 02</p><p>Pract 03</p></span></div>
+  <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Pract 01</p></span></div>
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
     </td>
   </tr>
   
+  
+  
   <tr>
-    <td>File paths</td>
-    <td>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Pract 03</p><p>Pract 05</p></span></div>
+    <td style="font-size: 0.85rem">File paths</td>
+    <td style="font-size: 0.85rem">
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12684" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 02</p><p>Pract 03</p></span></div>
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 01</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 01</p><p>ES Sem 05</p></span></div>
     </td>
   </tr> 
   
+  
+  
+  
   <tr>
-    <td>R objects, functions & packages</td>
-    <td>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Pract 04</p><p>Tut 05</p><p>Pract 05</p><p>Pract 06</p></span></div>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Tut 03</p><p>Tut 06</p></span></div>
+    <td style="font-size: 0.85rem">R objects, functions & packages</td>
+    <td style="font-size: 0.85rem">
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12684" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 04</p><p>Pract 05</p><p>Tut 05</p><p>Pract 06</p><p>Tut 06</p><p>Pract 07</p></span></div>
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
     </td>
   </tr>
   
+  
+  
+  
   <tr>
-    <td>Tidyverse & the Pipe %>%</td>
-    <td>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 05</p><p>Pract 05</p><p>Pract 06</p><p>Pract 07</p></span></div>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 03</p></span></div>
+    <td style="font-size: 0.85rem">The Pipe %>%</td>
+    <td style="font-size: 0.85rem">
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12684" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 09</p><p>Pract 10</p></span></div>
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 02</p></span></div>
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 03</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 03</p></span></div>
     </td>
   </tr>
   
-  <tr>
-    <td>RMarkdown</td>
-    <td>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Pract 04</p></span></div>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 02</p><p>Pract 02</p></span></div>
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 04</p><p>LU Sem 01</p></span></div>
-    </td>
-  </tr>
   
-
+  
+  
+  
   
   <tr>
-    <td>Inline code</td>
-    <td>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Pract 04</p></span></div>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Pract 01</p><p>Pract 05</p><p>Tut 06</p><p>Pract 09</p></span></div>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12722" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Pract 03</p><p>Pract 05</p></span></div>
+    <td style="font-size: 0.85rem">RMarkdown</td>
+    <td style="font-size: 0.85rem">
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12684" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 03</p><p>Pract 04</p></span></div>
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Pract 01</p><p>Tut 05</p></div>
+<div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Lab 01</p></span></div>
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>LU Sem 04</p><p>LU Sem 08</p></span></div>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>Importing & organising data</td>
-    <td>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Pract 05</p></span></div>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Pract 03</p></span></div>
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 01</p></span></div>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Inspecting data</td>
-    <td>
-    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Pract 03</p></span></div>
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 01</p></span></div>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>Wrangling/cleaning data</td>
-    <td>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Pract 07</p></span></div>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Pract 03</p><p>Pract 05</p><p>Tut 07</p><p>Pract 09</p></span></div>
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 03</p><p>LU Sem 02</p><p>LU Sem 05</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 04</p><p>LU Sem 01</p><p>LU Sem 07</p></span></div>
     </td>
   </tr>
   
 
 
-  
-  <tr>
-    <td>Summary stats & tables</td>
-    <td>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 01</p><p>Tut 06</p><p>Tut 07</p><p>Pract 08</p><p>Pract 09</p></span></div>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Pract 03</p><p>Pract 05</p></span></div>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12722" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Pract 02</p><p>Pract 03</p></span></div>
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 05</p></span></div>
-    </td>
-  </tr>
 
-  
-  <tr>
-    <td>Data visualisations & plots</td>
-    <td>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/10404" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 07</p><p>Pract 08</p><p>Tut 09</p></span></div>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 04</p><p>Pract 04</p><p>Pract 05</p><p>Tut 06</p><p>Pract 06</p><p>Tut 07</p><p>Pract 07</p><p>Tut 09</p><p>Pract 09</p></span></div>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12722" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Pract 02</p></span></div>
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://and2021.netlify.app/seminr/" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 06</p></span></div>
-    </td>
-  </tr>
-
-
-  
-  
-  <tr>
-    <td>Correlation</td>
-    <td>
-    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 06</p><p>Pract 06</p></span></div>
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12657" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Tut 07</p></span></div>
-    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
-    </td>
-  </tr>
-  
-  <tr>
-    <td>Chi-square</td>
-    <td>
-    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 06</p><p>Pract 06</p></span></div>
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
-    </td>
-  </tr>
-  
-
-  
-  <tr>
-    <td>t-test</td>
-    <td>
-    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 07</p><p>Pract 07</p></span></div>
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
-    </td>
-  </tr>
-  
-  <tr>
-    <td>General Linear Model</td>
-    <td>
-    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/9242" target="_blank"><img class="size_of_img" src="./img/AD.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 07</p><p>Pract 07</p><p>Tut 09</p><p>Pract 09</p><p>Pract 10</p></span></div>
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12722" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Tut 02</p><p>Pract 02</p><p>Pract 03</p><p>Tut 04</p><p>Tut 06</p><p>Tut 07</p><p>Tut 08</p><p>Tut 09</p><p>Tut 10</p></span></div>
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
-    </td>
-  </tr>
-  
-  
 
 
   
   <tr>
-    <td>Mediation</td>
-    <td>
+    <td style="font-size: 0.85rem">Inline code</td>
+    <td style="font-size: 0.85rem">
     <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 05</p></span></div>
+   <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12657" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Tut 09</p></span></div>
-    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>LU Sem 04</p><p>LU Sem 08</p></span></div>
     </td>
   </tr>
-
-  <tr>
-    <td>Moderation</td>
-    <td>
-    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12657" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Tut 09</p></span></div>
-    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
-    </td>
-  </tr>
+  
+  
+  
+  
+  
   
   <tr>
-    <td>Exploratory factor analysis</td>
-    <td>
+    <td style="font-size: 0.85rem">Importing & organising data</td>
+    <td style="font-size: 0.85rem">
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12684" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 07</p><p>Pract 08</p></span></div>
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Pract 02</p><p>Tut 05</p><p>Tut 06</p><p>Tut 07</p></span></div>
+<div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Lab 11</p><p>Tut 11</p></span></div>
+<div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/17306" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Lab 05</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 01</p></span></div>
+    </td>
+  </tr>
+
+
+
+
+
+
+
+
+  <tr>
+    <td style="font-size: 0.85rem">Exploring & inspecting data</td>
+    <td style="font-size: 0.85rem">
     <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Pract 02</p><p>Pract 03</p><p>Pract 04</p><p>Tut 05</p><p>Pract 05</p><p>Tut 06</p><p>Tut 07</p>></span></div>
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+<div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/17306" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Lab 05</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 01</p></span></div>
+    </td>
+  </tr>
+  
+  
+  
+  
+  
+  
+  
+  <tr>
+    <td style="font-size: 0.85rem">General data wrangling/cleaning</td>
+    <td style="font-size: 0.85rem">
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12684" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 08</p><p>Pract 09</p><p>Tut 09</p><p>Pract 10</p></span></div>
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Pract 02</p><p>Tut 02</p><p>Pract 03</p><p>Pract 04</p><p>Tut 05</p><p>Tut 09</p><p>Tut 10</p><p>Pract 10</p><p>Tut 11</p><p>Pract 11</p></span></div>
+<div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Tut 08</p><p>Lab 11</p></span></div>
+<div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/17306" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Lab 05</p><p>Lab 10</p><p>Tut 11</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 03</p><p>LU Sem 02</p><p>LU Sem 05</p></span></div>
+    </td>
+  </tr>
+  
+  
+  
+  
+  
+  
+  
+  
+  <tr>
+    <td style="font-size: 0.85rem">Creating composites & reverse scoring</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 07</p></span></div>
     <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
-    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12657" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Tut 07</p></span></div>
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/17306" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Lab 06</p></span></div>
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    </td>
+  </tr>
+
+
+
+
+
+
+
+
+  <tr>
+    <td style="font-size: 0.85rem">Recode/replace/change values/types</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Pract 03</p><p>Pract 04</p></span></div>
+<div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Lab 11</p></span></div>
+<div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/17306" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Lab 05</p><p>Lab 06</p></span></div>
+  <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+  </tr>
+
+
+
+
+
+  
+  <tr>
+    <td style="font-size: 0.85rem">Summary stats & tables</td>
+    <td style="font-size: 0.85rem">
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12684" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 09</p><p>Pract 10</p><p>Tut 10</p><p>Pract 11</p></span></div>
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Pract 02</p><p>Tut 02</p><p>Pract 03</p><p>Pract 04</p><p>Tut 07</p><p>Pract 11</p></span></div>
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Lab 04</p><p>Tut 07</p><p>Tut 09</p><p>Tut 11</p></span></div>
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 05</p></span></div>
+    </td>
+  </tr>
+
+
+
+
+
+
+
+
+
+
+  
+  <tr>
+    <td style="font-size: 0.85rem">Data visualisations & plots</td>
+    <td style="font-size: 0.85rem">
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12684" target="_blank"><img class="size_of_P_img" src="./img/PAAS.png" alt="PAAS logo" /></a><span class="tooltiptext"><p>Tut 10</p><p>Pract 11</p>></span></div>
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Pract 02</p><p>Tut 02</p><p>Tut 05</p><p>Pract 05</p><p>Tut 06</p><p>Tut 07</p><p>Tut 08</p><p>Pract 09</p><p>Tut 09</p><p>Pract 10</p></span></div>
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Tut 02</p><p>Lab 03</p><p>Tut 08</p><p>Tut 09</p><p>Tut 10</p></span></div>
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/17306" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Lab 10</p><p>Tut 11</p></span></div>
+    <div class="tooltip"><a href="https://and2021.netlify.app/seminr" target="_blank"><img class="size_of_P_img" src="./img/SMR.png" alt="SeminRs logo" /></a><span class="tooltiptext"><p>ES Sem 06</p><p>ES Sem 07</p></span></div>
+    </td>
+  </tr>
+
+
+
+
+
+
+
+
+
+  
+  
+  <tr>
+    <td style="font-size: 0.85rem">Correlation</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 05</p><p>Pract 05</p></span></div>
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/17306" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Tut 06</p></span></div>
     <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
     </td>
   </tr>
   
   
+  
+  
+  
+  
+  
+  
+  
+  <tr>
+    <td style="font-size: 0.85rem">Chi-square</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 06</p></span></div>
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    </td>
+  </tr>
+  
+  
+  
+  
+  
+
+  
+  <tr>
+    <td style="font-size: 0.85rem"><i>t</i>-test</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 07</p></span></div>
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    </td>
+  </tr>
+  
+  
+  
+  
+  
+  
+  <tr>
+    <td style="font-size: 0.85rem">Simple regression</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 08</p><p>Pract 09</p><p>Tut 09</p><p>Pract 10</p></span></div>
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Tut 02</p><p>Lab 02</p><p>Tut 04</p><p>Lab 05</p></span></div>
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    </td>
+  </tr>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <tr>
+    <td style="font-size: 0.85rem">Multiple regression</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/12727" target="_blank"><img class="size_of_P_img" src="./img/SMR2.png" alt="AnD logo" /></a><span class="tooltiptext"><p>Tut 10</p><p>Pract 10</p><p>Tut 11</p></span></div>
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Lab 02</p><p>Tut 03</p><p>Lab 03</p><p>Tut 04</p><p>Lab 04</p><p>Lab 05</p></span></div>
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    </td>
+  </tr>
+  
+  
+  
+  
+  
+  
+  
 
 
+  <tr>
+    <td style="font-size: 0.85rem">Independent anova</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Tut 05</p><p>Tut 06</p><p>Tut 08</p></span></div>
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    </td>
+  </tr>
+  
+  
+  
+  
+  
+  <tr>
+    <td style="font-size: 0.85rem">Repeated measures anova</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Tut 09</p></span></div>
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    </td>
+  </tr>
+  
+  
+  
+  
+  <tr>
+    <td style="font-size: 0.85rem">Ancova</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Tut 07</p></span></div>
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    </td>
+  </tr>
+  
+  
+  
+  
+  
+  
+  <tr>
+    <td style="font-size: 0.85rem">Mixed designs</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Tut 10</p></span></div>
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    </td>
+  </tr>
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <tr>
+    <td style="font-size: 0.85rem">Logistic regression</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Tut 11</p></span></div>
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    </td>
+  </tr>
+  
+
+
+
+
+  <tr>
+    <td style="font-size: 0.85rem">Mediation</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/17306" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Lab 11</p><p>Tut 11</p></span></div>
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    </td>
+  </tr>
+
+
+
+
+
+
+
+
+  <tr>
+    <td style="font-size: 0.85rem">Moderation</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/17306" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Lab 10</p><p>Tut 11</p></span></div>
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="font-size: 0.85rem">Exploratory factor analysis</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/17306" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Tut 06</p></span></div>
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="font-size: 0.85rem">Reliability/validity/power analysis</td>
+    <td style="font-size: 0.85rem">
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/15820" target="_blank"><img class="size_of_img" src="./img/DS.png" alt="DS logo" /></a><span class="tooltiptext"><p>Lab 09</p></span></div>
+    <div class="tooltip"><a href="https://canvas.sussex.ac.uk/courses/17306" target="_blank"><img class="size_of_img" src="./img/QQM.png" alt="QQM logo" /></a><span class="tooltiptext"><p>Tut 07</p></span></div>
+    <img class="size_of_P_img" src="./img/MT.png" alt="Empty space" />
+    </td>
+  </tr>
+   
 </table>
 
 
 ### Analyses Covered
 
-It is the supervisor's responsibility to teach any analyses and statistical techniques not taught by methods modules. A full list of the analyses covered in first- and second-year can be found below:
+It is the supervisor's responsibility to teach any analyses and statistical techniques not taught in methods modules. It is recommended that you familiarise yourself with the materials as detailed above when completing the dissertation analysis plan. In addition, a list of the analyses covered in first- and second-year can be found below:
 
 - **Independent *t*-test**
 
@@ -395,4 +616,6 @@ It is the supervisor's responsibility to teach any analyses and statistical tech
 
 
 <br>
+
+
 
